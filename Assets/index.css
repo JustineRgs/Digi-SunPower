@@ -2,6 +2,11 @@ hr {
     width: 35%;
 }
 
+section {
+    margin: 60px auto;
+    width: 90%;
+}
+
 .button {
     display: inline-block;
 	background-color: #affc41;
@@ -9,14 +14,11 @@ hr {
 	border-radius: 15px;
 	color: #2c3e4a;
 	font-weight: bold;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
-
-
-
-/* ----------------------------PARTIE FOOTER----------------------------  */
+/* ----------------------------FOOTER----------------------------  */
 
 footer{
     background-color: #2C3E4A;
@@ -54,7 +56,7 @@ footer{
     font-size: 16px;
 }
 
-/* BLOC DROIT MENTIONS LEGALES */
+/* BLOC DROIT : MENTIONS LEGALES */
 #footer_link{
     font-weight: bold;
     text-decoration: underline;

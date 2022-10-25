@@ -1,0 +1,52 @@
+/* ------------ARTICLE 1------------ */
+.art_picture {
+    width: 70%;
+}
+
+.art_decription {
+    margin : 15px 0;
+}
+
+/* REPONSIVE ARTICLE 1 */
+@media (max-width: 649px) {
+    .art_picture{
+        transform: translateX(20%);
+    }
+}
+
+@media (min-width: 650px ) {
+    .article_1 {
+        width: 70%;
+        display: flex;
+    }
+
+    .article_1--Secondary {
+        flex-direction: row-reverse;
+    }
+
+    .art_picture {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .art_decription {
+        width: 70%;
+        margin : 0 15px;
+    }
+}
+/* ------------FIN ARTICLE 1------------ */
+
+
+
+/* ------------ARTICLE 2------------ */
+.article_2{
+    text-align: center;
+}
+
+/* REPONSIVE ARTICLE 2 */
+@media (min-width: 650px ) {
+    .article_2{
+        width: 50%;
+    }
+}
+/* ------------FIN ARTICLE 2------------ */
