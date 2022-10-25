@@ -1,0 +1,87 @@
+hr {
+    width: 35%;
+}
+
+.button {
+    display: inline-block;
+	background-color: #affc41;
+	padding: 8px 20px;
+	border-radius: 15px;
+	color: #2c3e4a;
+	font-weight: bold;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* ----------------------------PARTIE FOOTER----------------------------  */
+
+footer{
+    background-color: #2C3E4A;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.footer_block{
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* BLOC GAUCHE "CONTACT" */
+#footer_subtitle {
+    font-weight: bold;
+}
+
+/* BLOC CENTRAL : RESEAUX SOCIAUX */
+#footer_title{
+    font-size: 14px;
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* FORMATAGE CERCLE/ICON */
+.icon {
+    margin: 0 10px;
+    padding: 0 8px;
+    background-color: #31B86B;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/* BLOC DROIT MENTIONS LEGALES */
+#footer_link{
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+
+@media (min-width: 650px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer > * {
+        width : 25%;
+    }
+
+    #footer_title {
+        font-size: 15px;
+    }
+
+    .footer_block--secondary {
+        padding: 0 50px;
+        border-left: solid 1px;
+        border-right: solid 1px;
+        border-color: #000000 ;
+        width: 50%;
+    }
+}
