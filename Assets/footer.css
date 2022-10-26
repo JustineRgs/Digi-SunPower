@@ -1,24 +1,3 @@
-hr {
-    width: 35%;
-}
-
-section {
-    margin: 60px auto;
-    width: 90%;
-}
-
-.button {
-    display: inline-block;
-	background-color: #affc41;
-	padding: 8px 20px;
-	border-radius: 15px;
-	color: #2c3e4a;
-	font-weight: bold;
-    margin-top: 30px;
-}
-
-
-/* <!------------ FOOTER ----------> */
 footer{
     background-color: #2C3E4A;
     color: #FFFFFF;
@@ -63,6 +42,7 @@ footer{
 }
 
 
+/* --------RESPONSIVE-------- */
 @media (min-width: 650px) {
     footer {
         display: flex;

@@ -1,28 +1,11 @@
-/*Accueil*/
-main{
-    margin: 0 3em 0 3em;
-}
-/*Titre et paragraphe*/
-h2{
-    text-align: center;
-    padding-bottom: 0;
-}
-
-h3{
-    text-align: center;
-}
-
-p{
-    padding: 0 20px 0 20px;
-}
-
-/*Fondateurs*/
+/* ------PARTIE FONDATEURS------ */
 #container_fondateur{
     margin: 20px 0 50px 0;
 }
 
 .fondateur{
     text-align: center;
+    font-weight: bold;
     margin-bottom: 40px;
 }
 
@@ -32,11 +15,7 @@ p{
     border-radius: 20px;
 }
 
-.fondateur_nom{
-    font-weight: bold;
-}
-
-/*Partenaires*/
+/* ------PARTIE PARTENAIRES------ */
 #container_partenaire{
     margin: 30px 0 40px 0;
 }
@@ -53,24 +32,20 @@ p{
     width: 80%;
 }
 
-/*Media Query*/
-@media (min-width: 650px) {
-    /*Fondateurs*/
+/* ------------RESPONSIVE------------ */
+
+@media (min-width: 700px) {
+    /* ------PARTIE FONDATEURS------ */
     #container_fondateur{
         display: flex;
-        justify-content: space-around;
-        margin-bottom: 30px;
-    }
-
-    .fondateur{
-        margin: 0;
+        margin: 0px 100px;
     }
 
     .fondateur_image{
         width: 90%;
     }
-   
-    /*Partenaires*/
+
+    /* ------PARTIE PARTENAIRES------ */
     #container_partenaire{
         display: flex;
         margin-top: 30px;

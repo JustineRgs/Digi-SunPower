@@ -1,22 +1,4 @@
-/*Montpellier*/
-
-/*Titres et paragraphes*/
-h2{
-    text-align: center;
-    margin-top: 30px;
-}
-
-h3{
-    text-align: center;
-    margin-top: 25px;
-}
-
-p{
-    text-align: center;
-    font-weight: bold;
-}
-
-/*Map*/
+/* <!------------ MAP ------------> */
 .mapouter{
     text-align:center;
     width: 100%;
@@ -36,13 +18,7 @@ p{
     height: 100%;
 }
 
-/* Button */
-#button{
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/* Media Queries */
+/* <!------------ RESPONSIVE ------------> */
 @media (min-width: 650px){
     .gmap_canvas {
         height: 400px;
@@ -53,17 +29,10 @@ p{
     .gmap_canvas {
         height: 500px;
     }   
-
-    p{
-        font-size: 20px;
-    }
 }
 
 @media (min-width: 1400px){
     .gmap_canvas {
         height: 700px;
     }   
-    .button{
-        font-size: 20px;
-    }
 }

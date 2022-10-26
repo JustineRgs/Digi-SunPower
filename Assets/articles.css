@@ -3,8 +3,8 @@
     width: 70%;
 }
 
-.art_decription {
-    margin : 15px 0;
+.art_description {
+    margin : 15px;
 }
 
 /* REPONSIVE ARTICLE 1 */
@@ -28,13 +28,7 @@
         width: 30%;
         object-fit: cover;
     }
-
-    .art_decription {
-        width: 70%;
-        margin : 0 15px;
-    }
 }
-/* ------------FIN ARTICLE 1------------ */
 
 
 
@@ -43,10 +37,4 @@
     text-align: center;
 }
 
-/* REPONSIVE ARTICLE 2 */
-@media (min-width: 650px ) {
-    .article_2{
-        width: 50%;
-    }
-}
-/* ------------FIN ARTICLE 2------------ */
+

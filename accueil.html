@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>SunPower | Accueil</title>
@@ -10,144 +10,151 @@
     <!-- Icones et styles -->
     <link rel="icon" type="image/x-icon" href="./Images/Icons/favicon.png">
     <link rel="stylesheet" href="./Assets/setup.css">
-    <link rel="stylesheet" href="./Assets/index.css">
+    <link rel="stylesheet" href="./Assets/style.css">
     <link rel="stylesheet" href="./Assets/header.css">
-    <link rel="stylesheet" href="./Assets/accueil.css">
     <link rel="stylesheet" href="./Assets/footer.css">
+    <link rel="stylesheet" href="./Assets/accueil.css">
+    <link rel="stylesheet" href="./Assets/articles.css">
     <!-- Imports svg -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <!-- Scripts -->
-    <script src="js/burger.js" defer></script>
+    <script src="./Js/burger.js" defer></script>
 </head>
+
 <body>
    <!----------HEADER---------->
    <header>
-    <!---------- NAVBAR ---------->
-    <nav>
-        <div id="navbar">
-            <!-- LOGO -->
-                <img id="navbar_logo" src="./Pictures/LOGO.png" alt="Logo Sunpower"></a>
-            <!-- FIN LOGO -->
+        <!---------- NAVBAR ---------->
+        <nav>
+            <div id="navbar" role="navigation">
+                <!-- LOGO -->
+                <a href="./accueil.html" id="navbar_logo"><img src="./Pictures/LOGO.png" alt="Logo Sunpower"></a>
+                <!-- FIN LOGO -->
 
-            <!-- MENU BURGER -->
-            <div id="nav_bar_burger">
-                <ion-icon id="nav_bar_burger_icon" name="menu-outline">
-            </div>
-            <!-- NAV DEKSTOP -->
-            <div id="navbar_dekstop">
-                <ul id="navbar_liste">
-                    <li class="navbar_item"><a href="./accueil.html">Accueil</a></li>
-                    <li class="navbar_item"><a href="./ombrieres.html">Nos Ombrières</a></li>
-                    <li class="navbar_item"><a href="./activités.html">Nos Activités</a></li>
-                    <li class="navbar_item"><a href="./contact.html">Nous Contacter</a></li>
-                </ul>
-                <a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a>
-            </div>
-                <!-- FIN NAV DEKSTOP -->
-        </div>
+                <!-- MENU BURGER -->
+                <button id="nav_bar_burger">
+                    <ion-icon id="nav_bar_burger_icon" name="menu-outline">
+                </button>
+                <!-- FIN MENU BURGER -->
 
-        <div id="nav_bar_burger_block">
-            <ul id="nav_bar_burger_liste">
-                <li><a href="./accueil.html">Accueil</a></li>
-                <li><a href="./ombrieres.html">Nos Ombrières</a></li>
-                <li><a href="./activités.html">Nos Activités</a></li>
-                <li><a href="./contact.html">Nous Contacter</a></li>
-                <li><a href="./montpellier.html">Nous retrouver <ion-icon name="location-sharp"></ion-icon></a></li>
-            </ul>
-        </div>
-        <!-- FIN MENU BURGER-->
-
-    <!------------ FIN NAVBAR ------------>
-    </nav>
-
-    <!------------ BANNER ---------->
-    <div id="banner">
-        <img src="Pictures/Banniere_Principale.jpg" id="banner_img" alt="">
-        <h1>Roulez électrique : Chargez solaire</h1>
-    </div>
-    <!------------ FIN BANNER ---------->  
-<!------------ FIN HEADER ---------->
-</header>
-    <main>
-        <section>
-            <article>
-                <h2>Qui sommes nous?</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni ab perspiciatis soluta omnis nam quidem dolores inventore exercitationem ipsum vel dolor dolorem, nisi porro libero beatae voluptatum facere facilis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni ab perspiciatis soluta omnis nam quidem dolores inventore exercitationem ipsum vel dolor dolorem, nisi porro libero beatae voluptatum facere facilis!</p>
-            </article>
-
-            <article>
-                <h3>Nos Fondateurs :</h3>
-
-                <div id="container_fondateur">
-                    <div class="fondateur">
-                        <img class="fondateur_image" src="./Pictures/Serge.jpg" alt="Illustration Serge Turing">
-                        <p class="fondateur_nom">Serge Turing</p>
-                    </div>
-                    <div class="fondateur">
-                        <img class="fondateur_image" src="./Pictures/Alex.jpg" alt="Illustration Alex Pareneinsten">
-                        <p class="fondateur_nom">Alex Pareneinsten</p>
-                    </div>
-                    <div class="fondateur">
-                        <img class="fondateur_image" src="./Pictures/Hugo.jpg" alt="Illustration Hugo Oppenheimer">
-                        <p class="fondateur_nom">Hugo Oppenheimer</p>
-                    </div>
+                <!-- NAV DEKSTOP -->
+                <div id="navbar_dekstop">
+                    <ul id="navbar_liste">
+                        <li class="navbar_item"><a href="./accueil.html">Accueil</a></li>
+                        <li class="navbar_item"><a href="./Pages/ombrieres.html">Nos Ombrières</a></li>
+                        <li class="navbar_item"><a href="./Pages/activités.html">Nos Activités</a></li>
+                        <li class="navbar_item"><a href="./Pages/contact.html">Nous Contacter</a></li>
+                        <li><a href="./Pages/montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a></li>
+                    </ul>
                 </div>
+                <!-- FIN NAV DEKSTOP -->
+            </div>
+            
+            <!-- MENU BURGER -->
+            <div id="nav_bar_burger_block">
+                <ul id="nav_bar_burger_liste">
+                    <li><a href="./accueil.html">Accueil</a></li>
+                    <li><a href="./Pages/ombrieres.html">Nos Ombrières</a></li>
+                    <li><a href="./Pages/activités.html">Nos Activités</a></li>
+                    <li><a href="./Pages/contact.html">Nous Contacter</a></li>
+                    <li><a href="./Pages/montpellier.html">Nous retrouver <ion-icon name="location-sharp"></ion-icon></a></li>
+                </ul>
+            </div>
+            <!-- FIN MENU BURGER-->
+        </nav>
+        <!------------ FIN NAVBAR ------------>
 
-            </article>
+        <!------------ BANNER ---------->
+        <div id="banner">
+            <img src="./Pictures/Banniere_Principale.jpg" id="banner_img" alt="">
+            <h1 id="banner_title">Roulez électrique : Chargez solaire</h1>
+        </div>
+        <!------------ FIN BANNER ---------->  
+    </header>
+    <!------------ FIN HEADER ---------->
+
+    <!------------ MAIN ---------->   
+    <main>
+        <!------------ SECTION 1 ---------->
+        <section class="article_2">
+            <h2>Qui sommes nous?</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni ab perspiciatis soluta omnis nam quidem dolores inventore exercitationem ipsum vel dolor dolorem, nisi porro libero beatae voluptatum facere facilis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni ab perspiciatis soluta omnis nam quidem dolores inventore exercitationem ipsum vel dolor dolorem, nisi porro libero beatae voluptatum facere facilis!</p>
+
+            <h3 class="art_description">Nos Fondateurs :</h3>
+
+            <div id="container_fondateur">
+                <div class="fondateur">
+                    <img class="fondateur_image" src="./Pictures/Serge.jpg" alt="Illustration Serge Turing">
+                    <p>Serge Turing</p>
+                </div>
+                <div class="fondateur">
+                    <img class="fondateur_image" src="./Pictures/Alex.jpg" alt="Illustration Alex Pareneinsten">
+                    <p>Alex Pareneinsten</p>
+                </div>
+                <div class="fondateur">
+                    <img class="fondateur_image" src="./Pictures/Hugo.jpg" alt="Illustration Hugo Oppenheimer">
+                    <p>Hugo Oppenheimer</p>
+                </div>
+            </div>
         </section>
+        <!------------ FIN SECTION 1 ---------->
 
-        <section>
+        <!------------ SECTION 2 ---------->
+        <section class = "article_2">
             <h2>Nos partenaires</h2>
 
             <div id="container_partenaire">
                 <div class="partenaire_image">
-                    <a href="https://www.ines-solaire.org/"><img src="./Pictures/Logo_ines.jpg" alt="Logo Ines"></a>
-                    <a href="https://www.montpellier3m.fr/"><img src="./Pictures/Logo_mtp.jpg" alt=" Logo Ville de Montpellier"></a>
+                    <a href="https://www.ines-solaire.org/" target="_blank" ><img src="./Pictures/Logo_ines.jpg" alt="Logo Ines"></a>
+                    <a href="https://www.montpellier3m.fr/" target="_blank" ><img src="./Pictures/Logo_mtp.jpg" alt=" Logo Ville de Montpellier"></a>
                 </div>
 
                 <div class="partenaire_image">
-                    <a href="https://www.dpi-experience.fr/"><img src="./Pictures/Logo_dpi.png" alt="Logo DPI"></a>
-                    <a href="https://www.cea.fr/"><img src="./Pictures/Logo_cea.png" alt="Logo CEA"></a>
+                    <a href="https://www.dpi-experience.fr/" target="_blank" ><img src="./Pictures/Logo_dpi.png" alt="Logo DPI"></a>
+                    <a href="https://www.cea.fr/" target="_blank" ><img src="./Pictures/Logo_cea.png" alt="Logo CEA"></a>
                 </div>
             </div>
         </section>
-
+        <!------------ FIN SECTION 2 ---------->
     </main>
+    <!------------ FIN MAIN ---------->
 
+    <!------------ FOOTER ---------->
     <footer>
         <!-- BLOC GAUCHE -->
-            <div class="footer_block">
-                <span id="footer_subtitle">Contact</span>
-                <p>2 rue de l’innovation</p>
-                <p>38000 Grenoble</p>
-                <a href="tel:04.67.00.00.00">04.67.00.00.00</a>
-                <a href="mailto:contact@sunpower.com">contact@sunpower.com</a>
-            </div>
+        <div class="footer_block">
+            <span id="footer_subtitle">Contact</span>
+            <p>2 rue de l’innovation</p>
+            <p>38000 Grenoble</p>
+            <a href="tel:04.67.00.00.00">04.67.00.00.00</a>
+            <a href="mailto:contact@sunpower.com">contact@sunpower.com</a>
+        </div>
         <!-- FIN BLOC GAUCHE -->
-        
+    
         <!-- BLOC CENTRAL -->
-            <div class="footer_block footer_block--secondary">
-                <p id="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
-                <ul class="footer_icon">
-                    <li class="icon"><a href="https://www.facebook.com/" target="_blank" alt="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
-        
-                    <li class="icon"><a href="https://www.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin" alt="Lien vers Linkedin"></ion-icon></a></li>
-        
-                    <li class="icon"><a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" alt="Lien vers Youtube"></ion-icon></a></li>
-        
-                    <li class="icon"><a href="https://twitter.com/" target="_blank" alt="Lien vers Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-            </div>
+        <div class="footer_block footer_block--secondary">
+            <p id="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
+            <ul class="footer_icon">
+                <li class="icon"><a href="https://www.facebook.com/" target="_blank" alt="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://www.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin" alt="Lien vers Linkedin"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" alt="Lien vers Youtube"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://twitter.com/" target="_blank" alt="Lien vers Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </div>
         <!-- FIN BLOC CENTRAL -->
-        
+    
         <!-- BLOC DROIT -->
-            <div class="footer_block">
-                <p>ⓒsunpower 2013.</p>
-                <a href="" id="footer_link">mentions légales</a>
-            </div>
+        <div class="footer_block">
+            <p>ⓒsunpower 2013.</p>
+            <a href="#" id="footer_link">mentions légales</a>
+        </div>
         <!-- FIN BLOC DROIT -->
-        </footer>
+    </footer>
+    <!------------ FIN FOOTER ---------->
 </body>
 </html>
