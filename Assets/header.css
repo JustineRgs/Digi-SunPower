@@ -1,0 +1,161 @@
+/* <!------------ NAVBAR ------------> */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 3px 10px #31B86B
+}
+
+#navbar_logo{
+    width: 30%;
+}
+
+/* NAVBAR DEKSTOP */
+#navbar_dekstop{
+    display: none;
+}
+
+/* <!------------ MENU BURGER ------------> */
+#nav_bar_burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+}
+
+#nav_bar_burger_icon{
+    color: #2C3E4A;
+    font-size: 40px;
+}
+
+#nav_bar_burger_block{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    visibility: hidden;
+    
+}
+
+#nav_bar_burger_liste{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15em;
+    width: 13em;
+    background-color: white;
+    border-bottom: solid 1px #2C3E4A;
+    border-top: solid 1px #2C3E4A;
+    border-left: solid 1px #2C3E4A;
+    right: 14px;
+}
+
+#nav_bar_burger_liste li{
+    color:#086375;
+    margin: 0;
+    padding-left: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: solid 1px #2C3E4A;
+}
+
+#nav_bar_burger_liste li:nth-child(5){
+    border-bottom: 0;
+}
+
+#nav_bar_burger_liste li ion-icon{
+    color: #31B86B;
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+/* <!-- VISIBILITY NONE --> */
+#visibility_none{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+/* <!--------------------> */
+
+
+
+/* ----------BANIERE---------- */
+#banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+
+/* <!------------ RESPONSIVE ----------> */
+
+@media (min-width: 700px){
+    nav{
+        display: flex;
+        width: 100%;
+    }
+
+    #navbar_logo {
+        width: 15%;
+    }
+
+    #navbar_liste {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        font-size: 13px;
+        font-weight: bold;
+        color: #086375;
+    }
+
+    #navbar_dekstop {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 40px;
+    }
+
+    .navbar_item {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 5px;
+    }
+
+    .navbar_item--Secondary {
+        font-size: 24px;
+        color:#31B86B;
+        padding-left: 40px;
+    }
+
+    #nav_bar_burger {
+        display: none;
+    }
+
+    #banner_img {
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+}

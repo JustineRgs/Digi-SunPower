@@ -2,16 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>SunPower | Nos Ombrières</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de l'entreprise SunPower, vendeur d'ombrière solaire pour la recharge de voiture électrique. Gestionnaire de projets liés à l'environnement et l'énergie solaire.">
+    <meta name="authors" content="Justine Ragues, Sadadi Assani, Grégory Koch">
+    <!-- Icones et styles -->
+    <link rel="icon" type="image/x-icon" href="./Images/Icons/favicon.png">
     <link rel="stylesheet" href="./Assets/setup.css">
+    <link rel="stylesheet" href="./Assets/header.css">
     <link rel="stylesheet" href="./Assets/index.css">
     <link rel="stylesheet" href="./Assets/articles.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <title>Document</title>
+    <!-- Imports svg -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <!-- Scripts -->
+    <script src="js/burger.js" defer></script>
 </head>
 <body>
+    <!----------HEADER---------->
+    <header>
+        <!---------- NAVBAR ---------->
+        <nav>
+            <div id="navbar">
+                <!-- LOGO -->
+                    <img id="navbar_logo" src="./Pictures/LOGO.png" alt="Logo Sunpower"></a>
+                <!-- FIN LOGO -->
+
+                <!-- MENU BURGER -->
+                <div id="nav_bar_burger">
+                    <ion-icon id="nav_bar_burger_icon" name="menu-outline">
+                </div>
+                <!-- NAV DEKSTOP -->
+                <div id="navbar_dekstop">
+                    <ul id="navbar_liste">
+                        <li class="navbar_item"><a href="./accueil.html">Accueil</a></li>
+                        <li class="navbar_item"><a href="./ombrieres.html">Nos Ombrières</a></li>
+                        <li class="navbar_item"><a href="./activités.html">Nos Activités</a></li>
+                        <li class="navbar_item"><a href="./contact.html">Nous Contacter</a></li>
+                    </ul>
+                    <a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a>
+                </div>
+                    <!-- FIN NAV DEKSTOP -->
+            </div>
+
+            <div id="nav_bar_burger_block">
+                <ul id="nav_bar_burger_liste">
+                    <li><a href="./accueil.html">Accueil</a></li>
+                    <li><a href="./ombrieres.html">Nos Ombrières</a></li>
+                    <li><a href="./activités.html">Nos Activités</a></li>
+                    <li><a href="./contact.html">Nous Contacter</a></li>
+                    <li><a href="./montpellier.html">Nous retrouver <ion-icon name="location-sharp"></ion-icon></a></li>
+                </ul>
+            </div>
+            <!-- FIN MENU BURGER-->
+        </nav>
+        <!------------ FIN NAVBAR ------------>
+
+        <!------------ BANNER ---------->
+        <div id="banner">
+            <img src="Pictures/Banniere_Ombriere.jpg" id="banner_img" alt="">
+            <h1>Nos ombrières solaires</h1>
+        </div>
+        <!------------ FIN BANNER ---------->  
+    <!------------ FIN HEADER ---------->
+    </header>
+<main>
 <!-- SECTION 1 -->
     <section class = "article_1 article_1--Secondary">
         <article class = "art_decription">
