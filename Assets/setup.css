@@ -97,9 +97,9 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   height: 100vh;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 300;
   line-height: 2;
   margin: 0;
@@ -115,7 +115,7 @@ body {
  header {
   margin: 0 100px; */
  }
-}
+
 
 
 
