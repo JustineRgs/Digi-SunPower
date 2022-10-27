@@ -14,36 +14,36 @@
 </head>
 <body>
     <main>
-        <h2>Entreprises & Collectivités</h2>
+        <h2 id="form_h2">Entreprises & Collectivités</h2>
 
         <!-- DEBUT FORMULAIRE -->
         <form>
             <h3>Coordonnées</h3>
 
-            <p>Tous les champs sont obligatoires</p>
+            <p class="form_p">Tous les champs sont obligatoires</p>
 
             <!-- DEBUT PREMIER FIELDSET -->
             <fieldset class="fieldset">
                <label for="raison_sociale">Raison sociale</label>
-                <input type="text" name="raison_sociale"   id="raison_sociale" autofocus required> 
+                <input type="text" maxlength="50" name="raison_sociale"   id="raison_sociale" autofocus required> 
                 <div class="flex-container1">
                     <div class="flex-container2">
                         <label for="nom_responsable">Nom du responsable</label>
-                        <input type="text"name="nom_responsable" id="nom_responsable" required>
+                        <input type="text" maxlength="50" name="nom_responsable" id="nom_responsable" required>
                     </div>
                     <div class="flex-container2">
                         <label for="prenom_responsable">Prénom du responsable</label>
-                        <input type="text"name="prenom_responsable" id="prenom_responsable" required>
+                        <input type="text" maxlength="50" name="prenom_responsable" id="prenom_responsable" required>
                     </div>
                 </div>
                 <div class="flex-container1">
                     <div class="flex-container2">
                         <label for="qualite_responsable">Qualité du responsable</label>
-                        <input type="text"name="qualite_responsable" id="qualite_responsable" required>
+                        <input type="text" maxlength="50" name="qualite_responsable" id="qualite_responsable" required>
                     </div>
                     <div class="flex-container2">
                         <label for="numero_telephone">Numéro de téléphone</label>
-                        <input type="tel" maxlength="10" name="numero_telephone" id="numero_telephone" required>
+                        <input type="tel" maxlength="10" pattern="[0-9]{10}" name="numero_telephone" id="numero_telephone" required>
                     </div>
                 </div>
             </fieldset>
@@ -54,16 +54,16 @@
             <!-- DEBUT DEUXIEME FIELDSET -->
             <fieldset class="fieldset">
                 <label for="adresse">Adresse</label>
-                <input type="text" name="adresse" id="adresse" required> 
+                <input type="text" maxlength="50" name="adresse" id="adresse" required> 
 
                 <label for="adresse_complement">Complément d'adresse (facultatif)</label>
-                <input type="text"name="adresse_complement" id="adresse_complement" required>
+                <input type="text" maxlength="50" name="adresse_complement" id="adresse_complement">
 
                 <label for="code_postal">Code postal</label>
-                <input type="text" maxlength="5" name="code_postal" id="code_postal" pattern="[0-9]{5}" required>
+                <input type="text" maxlength="5" pattern="[0-9]{5}" name="code_postal" id="code_postal" required>
 
                 <label for="ville">Ville</label>
-                <input type="text"name="ville" id="ville" required>
+                <input type="text" maxlength="50" name="ville" id="ville" required>
              </fieldset>
             <!-- FIN DEUXIEME FIELDSET -->
 
@@ -71,13 +71,13 @@
 
             <!-- DEBUT TROISIEME FIELDSET -->
             <fieldset class="fieldset">
-                <label for="projet">Décrivez votre projet en quelques lignes <span>(500caractères max)</span> :</label>
+                <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères max)</span> :</label>
                 <textarea maxlength="500" rows="10" name="projet" id="projet" required></textarea>
 
                 <p id="text_input_file">Joindre un fichier</p> 
                 <label id="projet_fichier_label" for="projet_fichier">Choisir le fichier <ion-icon name="download-outline"></ion-icon></label>
                 <input type="file" accept=".pdf" name="projet_fichier" id="projet_fichier" required>
-                <p>Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
+                <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
              </fieldset>
             <!-- FIN TROISIEME FIELDSET -->
 
