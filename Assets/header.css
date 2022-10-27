@@ -37,6 +37,7 @@ nav{
 #nav_bar_burger_icon{
     color: #2C3E4A;
     font-size: 40px;
+    pointer-events: none;
 }
 
 #nav_bar_burger_block{
