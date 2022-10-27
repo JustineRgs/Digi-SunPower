@@ -1,0 +1,119 @@
+/*Titres et paragraphes*/
+h2{
+    text-decoration: underline;
+}
+
+p{
+    color: grey;
+    font-style: italic;
+}
+
+span{
+    color: grey;
+    font-style: italic;
+}
+
+/*Formulaires*/
+form{
+    margin:10px;
+}
+
+.fieldset{
+    border: solid 1px #31B86B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    border:0;
+    border-bottom: solid 1px #086375;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+}
+
+    /*Input File*/
+    #projet_fichier{
+        display: none;
+    }
+
+    #text_input_file{
+        color: black;
+        font-style: normal;
+    }
+
+    #projet_fichier_label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        height: 35px;
+        background-color: #1DD3B0;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    #projet_fichier_label ion-icon{
+        font-size: 20px;
+    }
+
+
+    /*Bouton fin de page*/
+    #annuler{
+        display: inline-block;
+        width: 150px;
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 15px;
+        color: #2c3e4a;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    #envoyer{
+        width: 150px;
+        cursor: pointer;
+    }
+
+    #container_button{
+        display: flex;
+        justify-content: space-around;
+    }
+
+/*Media Query*/
+@media(min-width: 650px){
+    .flex-container1{
+        width: 100%;
+        display: flex;
+    }
+
+    .flex-container1:nth-child(2){
+        margin-left: 50px;
+    }
+
+    .flex-container2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #container_button{
+        justify-content: end;
+    }
+
+    #annuler{
+        margin-right: 50px;
+    }
+}
+
+@media(min-width: 1100px){
+
+}

@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="../Assets/footer.css">
     <link rel="stylesheet" href="../Assets/style.css">
     <link rel="stylesheet" href="../Assets/contact.css">
+    <link rel="stylesheet" href="../Assets/formulaire.css">
     <!-- Imports svg -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <!-- Scripts -->
     <script src="../main.js" defer></script>
+    <script src="../Js/formulaire.js" defer></script>
 </head>
 <body>
     <!----------HEADER---------->
@@ -44,7 +46,6 @@
                         <li class="navbar_item"><a href="./activités.html">Nos Activités</a></li>
                         <li class="navbar_item active"><a href="./contact.html">Nous Contacter</a></li>
                         <li><a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a></li>
-
                     </ul>
                 </div>
                  <!-- FIN NAV DEKSTOP -->
@@ -80,10 +81,10 @@
         <h2 id="title">Vous êtes...</h2>
         <section class="article_2 container_contact">
             <!-- ENTREPRISE ET COLLECTIVITE -->
-            <a href="#" class="card_contact">
+            <button class="card_contact" id="contact_1">
                 <img src="../Pictures/Entreprise.png" alt="Formulaire pour les entreprises ou les collectivités">
                 <p>Une entreprise ou une collectivité</p>
-            </a>
+            </button>
 
             <!-- SYNDICAT DE COPROPRIETE -->
             <a href="#" class="card_contact">
@@ -97,6 +98,90 @@
                 <p>Un particulier</p>
             </a>
         </section>
+
+        <div id="modal_1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- DEBUT FORMULAIRE -->
+                <form>
+                    <h3>Coordonnées</h3>
+
+                    <p>Tous les champs sont obligatoires</p>
+
+                    <!-- DEBUT PREMIER FIELDSET -->
+                    <fieldset class="fieldset">
+                    <label for="raison_sociale">Raison sociale</label>
+                        <input type="text" name="raison_sociale"   id="raison_sociale" autofocus required> 
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="nom_responsable">Nom du responsable</label>
+                                <input type="text"name="nom_responsable" id="nom_responsable" required>
+                            </div>
+                            <div class="flex-container2">
+                                <label for="prenom_responsable">Prénom du responsable</label>
+                                <input type="text"name="prenom_responsable" id="prenom_responsable" required>
+                            </div>
+                        </div>
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="qualite_responsable">Qualité du responsable</label>
+                                <input type="text"name="qualite_responsable" id="qualite_responsable" required>
+                            </div>
+                            <div class="flex-container2">
+                                <label for="numero_telephone">Numéro de téléphone</label>
+                                <input type="tel" maxlength="10" name="numero_telephone" id="numero_telephone" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- FIN PREMIER FIELDSET -->
+
+                    <h3>Adresse</h3>
+
+                    <!-- DEBUT DEUXIEME FIELDSET -->
+                    <fieldset class="fieldset">
+                        <label for="adresse">Adresse</label>
+                        <input type="text" name="adresse" id="adresse" required> 
+
+                        <label for="adresse_complement">Complément d'adresse (facultatif)</label>
+                        <input type="text"name="adresse_complement" id="adresse_complement" required>
+
+                        <label for="code_postal">Code postal</label>
+                        <input type="text" maxlength="5" name="code_postal" id="code_postal" pattern="[0-9]{5}" required>
+
+                        <label for="ville">Ville</label>
+                        <input type="text"name="ville" id="ville" required>
+                    </fieldset>
+                    <!-- FIN DEUXIEME FIELDSET -->
+
+                    <h3>Votre projet</h3>
+
+                    <!-- DEBUT TROISIEME FIELDSET -->
+                    <fieldset class="fieldset">
+                        <label for="projet">Décrivez votre projet en quelques lignes <span>(500caractères max)</span> :</label>
+                        <textarea maxlength="500" rows="10" name="projet" id="projet" required></textarea>
+
+                        <p id="text_input_file">Joindre un fichier</p> 
+                        <label id="projet_fichier_label" for="projet_fichier">Choisir le fichier <ion-icon name="download-outline"></ion-icon></label>
+                        <input type="file" accept=".pdf" name="projet_fichier" id="projet_fichier" required>
+                        <p>Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
+                    </fieldset>
+                    <!-- FIN TROISIEME FIELDSET -->
+
+                    <!-- DEBUT PIED DE PAGE -->
+                    <div id="container_button">
+                        <button><a id="annuler" href="./contact.html">Annuler</a></button>
+                        <input class="button" id="envoyer" type="submit" value="Envoyer">
+                    </div>
+                    <!-- FIN PIED DE PAGE -->
+                </form>
+                <!-- FIN FORMULAIRE -->
+            </div>
+        </div>
+
+
+
+
+
         <!-- --------FIN BLOC DES 3 CONTACTS-------- -->
 
     </main>
