@@ -150,7 +150,12 @@ nav{
         display: flex;
         justify-content: space-between;
         padding: 2px 5px;
-        cursor: pointer;
+    }
+
+    .navbar_item:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
     .navbar_item--Secondary {
@@ -158,9 +163,10 @@ nav{
         color:#31B86B;
     }
 
-    .active .navbar_item:hover{
-        color:green;
+    .active {
+        color:#31B86B;
     }
+
 
     /* BANNER */
     #banner_img {
