@@ -1,11 +1,16 @@
-/*Titres et paragraphes*/
+/* -----TEXTE----- */
 #form_h2{
-    text-decoration: underline;
+    padding: 0 0 0 10px;
+}
+
+h3 {
+    padding-bottom: 0;
 }
 
 .form_p{
     color: grey;
     font-style: italic;
+    font-size: 11px;
 }
 
 #form_span{
@@ -13,9 +18,9 @@
     font-style: italic;
 }
 
-/*Formulaires*/
+/* ----FORMULAIRE---- */
 form{
-    margin:10px;
+    padding: 0 20px 0 15px;
 }
 
 .fieldset{
@@ -36,59 +41,59 @@ input:focus{
 
 textarea{
     width: 100%;
+    border: solid 1px #086375;
 }
 
-    /*Input File*/
-    #projet_fichier{
-        display: none;
-    }
+/*----INPUT FILE----*/
+#projet_fichier{
+    display: none;
+}
 
-    #text_input_file{
-        color: black;
-        font-style: normal;
-    }
+#text_input_file{
+    color: black;
+    font-style: normal;
+}
 
-    #projet_fichier_label{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 200px;
-        height: 35px;
-        background-color: #1DD3B0;
-        border-radius: 5px;
-        text-transform: uppercase;
-        padding-left: 10px;
-        cursor: pointer;
-    }
+#projet_fichier_label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 35px;
+    background-color: #1DD3B0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    cursor: pointer;
+}
 
-    #projet_fichier_label ion-icon{
-        font-size: 20px;
-    }
+#projet_fichier_label ion-icon{
+    font-size: 20px;
+}
 
 
-    /*Bouton fin de page*/
-    #annuler{
-        display: inline-block;
-        width: 150px;
-        background-color: white;
-        padding: 8px 20px;
-        border-radius: 15px;
-        color: #2c3e4a;
-        font-weight: bold;
-        margin-top: 30px;
-    }
+/*----BOUTON FIN DE PAGE----*/
+#container_button{
+    display: flex;
+    justify-content: space-around;
+}
 
-    #envoyer{
-        width: 150px;
-        cursor: pointer;
-    }
+#annuler{
+    width: 150px;
+    color: #2c3e4a;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 20px;
+}
 
-    #container_button{
-        display: flex;
-        justify-content: space-around;
-    }
+#envoyer{
+    margin: 0;
+    cursor: pointer;
+    width: 150px;
+}
 
-/*Media Query*/
+
+/* ---------RESPONSIVE FORMULAIRE---------- */
 @media(min-width: 650px){
     .flex-container1{
         width: 100%;
@@ -101,8 +106,12 @@ textarea{
         width: 100%;
     }
 
+    .flex-container2:nth-child(2n+1){
+        padding-right: 25px;
+    }
+
     .flex-container2:nth-child(2n){
-        padding-left: 50px;
+        padding-left: 25px;
     }
 
     #container_button{
@@ -110,6 +119,70 @@ textarea{
     }
 
     #annuler{
-        margin-right: 50px;
+        margin-right: 30px;
     }
 }
+
+/* -----MODAL------ */
+
+.overlay{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal{
+    background-color: #fefefe;
+    border: 1px solid #31b86b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+}
+
+.modal_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #31b86b3d;
+}
+
+#close {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.modal_body{
+    height: calc(100% - 68px);
+    width: 100%;
+    overflow: overlay;
+    padding: 5px;
+}
+
+/* ---------RESPONSIVE MODAL---------- */
+@media (min-width: 650px) {
+    .modal {
+        width: 70%;
+        height: 80%;
+    }
+
+    .modal_body {
+        padding: 10px;
+    }
+} 
+
+@media (min-width: 1250px) {
+    .modal {
+        width: 50%;
+    }
+} 

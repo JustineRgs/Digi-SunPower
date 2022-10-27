@@ -34,11 +34,12 @@
 
 /* ------------RESPONSIVE------------ */
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
     /* ------PARTIE FONDATEURS------ */
     #container_fondateur{
         display: flex;
-        margin: 0px 100px;
+        justify-content: center;
+        margin: 0px 70px;
     }
 
     .fondateur_image{

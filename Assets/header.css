@@ -9,7 +9,7 @@ nav{
 
 #navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 72px;
@@ -18,7 +18,10 @@ nav{
 }
 
 #navbar_logo{
-    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
 }
 
 /* NAVBAR DEKSTOP */
@@ -29,10 +32,9 @@ nav{
 /* <!------------ MENU BURGER ------------> */
 #nav_bar_burger{
     display: flex;
-    flex-direction: column;
     justify-content: end;
     padding: 10px;
-    position: relative;
+    width: 100vw;
 }
 
 #nav_bar_burger_icon{
@@ -97,7 +99,7 @@ nav{
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 71px;
+    margin: 71px 0 50px 0;
 }
 
 #banner_title{
@@ -127,8 +129,11 @@ nav{
         display: none;
     }
 
-    #navbar_logo {
-        width: 15%;
+    #navbar_dekstop {
+        display: flex;
+        justify-content: end;
+        width: 80%;
+        margin: 0 40px;
     }
 
     #navbar_liste {
@@ -141,17 +146,11 @@ nav{
         white-space: nowrap;
     }
 
-    #navbar_dekstop {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin: 0 40px;
-    }
 
     .navbar_item {
         display: flex;
         justify-content: space-between;
-        padding: 2px 5px;
+        padding: 2px 7px;
     }
 
     .navbar_item:hover{
@@ -171,10 +170,33 @@ nav{
 
 
     /* BANNER */
+
+    #banner {
+        margin: 71px 0 60px;
+    }
+
     #banner_img {
         width: 100vw;
         height: 45vh;
         object-fit: cover;
     }
+}
 
+@media (min-width : 1100px) {
+    #banner {
+        margin: 71px 0 80px;
+    }
+
+    #navbar_liste {
+        font-size: 16px;
+    }
+}
+
+@media (min-width : 1500px) {
+    #navbar_liste {
+        font-size: 20px;
+    }
+    .navbar_item--Secondary {
+        font-size: 30px;
+    }
 }

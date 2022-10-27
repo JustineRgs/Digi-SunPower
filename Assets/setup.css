@@ -7,7 +7,7 @@
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fefefe;
   margin: 0;
 
@@ -25,24 +25,6 @@ h3 {
   color: #31b86b;
   margin: 0;
   padding-bottom: 20px;
-}
-
-@media (min-width: 650px ) {
- 
-  h1 {
-    font-size: 28px;
-    color: #fefefe;
-  }
-
-  h2 {
-    font-size: 24px;
-    color: #086375;
-  }
-
-  h3 {
-    font-size: 18px;
-    color: #31b86b;
-  }
 }
 
 p,
@@ -109,16 +91,63 @@ ion-icon {
 }
 
 
+/* -----------RESPONSIVE------------- */
+@media (min-width: 650px ) {
+ 
+  h1 {
+    font-size: 30px;
+    color: #fefefe;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #086375;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #31b86b;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 1100px){
   main {
     padding: 0 100px;
   }
- }
 
- /* @media (min-width: 1450px){
-  .navbar {
-    margin: 0 100px;
-  } */
+  h1 {
+    font-size: 40px;
+    color: #fefefe;
+  }
+
+  h2 {
+    font-size: 30px;
+    color: #086375;
+  }
+
+  h3 {
+    font-size: 26px;
+    color: #31b86b;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1500px){
+  main {
+    padding: 0 200px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
 
 
 
