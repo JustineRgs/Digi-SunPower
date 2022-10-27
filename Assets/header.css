@@ -150,6 +150,7 @@ nav{
         display: flex;
         justify-content: space-between;
         padding: 2px 5px;
+        cursor: pointer;
     }
 
     .navbar_item--Secondary {

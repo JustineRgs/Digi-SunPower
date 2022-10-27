@@ -9,7 +9,7 @@ const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
 //On crée un évènement sur le clic du bouton burger pour afficher le menu
-burgerBouton.addEventListener("touchstart", () => {
+burgerBouton.addEventListener("click", () => {
     if(burgerMenu.style.visibility === "hidden"){
         burgerMenu.style.visibility = "visible";
     }
@@ -19,10 +19,10 @@ burgerBouton.addEventListener("touchstart", () => {
 });
 
 //On crée un évènement pour pouvoir fermer le menu en cliquant n'importe où sur l'écran
-main.addEventListener("touchstart", () => {
+main.addEventListener("click", () => {
     burgerMenu.style.visibility = "hidden"; 
 });
 
-footer.addEventListener("touchstart", () => {
+footer.addEventListener("click", () => {
     burgerMenu.style.visibility = "hidden"; 
 });
