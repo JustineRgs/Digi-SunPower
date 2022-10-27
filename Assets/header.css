@@ -110,9 +110,14 @@ nav{
 /* <!-------------------------------------- RESPONSIVE -------------------------------> */
 
 @media (min-width: 650px){
+    /* NAVBAR */
     nav{
         display: flex;
         width: 100%;
+    }
+
+    #nav_bar_burger {
+        display: none;
     }
 
     #nav_bar_burger_block{
@@ -151,10 +156,11 @@ nav{
         color:#31B86B;
     }
 
-    #nav_bar_burger {
-        display: none;
+    .active .navbar_item:hover{
+        color:green;
     }
 
+    /* BANNER */
     #banner_img {
         width: 100vw;
         height: 60vh;

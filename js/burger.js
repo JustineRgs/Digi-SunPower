@@ -1,5 +1,5 @@
 // On déclare une variable correspondant à l'élément du DOM du bouton burger
-const burgerBouton = document.getElementById("nav_bar_burger_icon");
+const burgerBouton = document.getElementById("nav_bar_burger");
 
 // On déclare une variable correspondant à l'élément du DOM du menu burger
 const burgerMenu = document.getElementById("nav_bar_burger_block")
