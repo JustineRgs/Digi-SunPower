@@ -187,6 +187,10 @@ nav{
         margin: 71px 0 80px;
     }
 
+    #banner_img {
+        height: 60vh;
+    }
+
     #navbar_liste {
         font-size: 16px;
     }

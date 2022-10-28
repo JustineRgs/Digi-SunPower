@@ -165,7 +165,7 @@ textarea{
 .modal_body{
     height: calc(100% - 68px);
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 5px;
 }
 
