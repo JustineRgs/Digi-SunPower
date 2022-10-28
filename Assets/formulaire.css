@@ -46,7 +46,14 @@ textarea{
 
 /*----INPUT FILE----*/
 #projet_fichier{
-    display: none;
+    opacity: 0;
+    bottom: 106px;
+    position: absolute;
+    width: 200px;
+}
+
+#file-upload-button{
+    background-color: #fefefe;
 }
 
 #text_input_file{
@@ -86,7 +93,7 @@ textarea{
     padding-right: 20px;
 }
 
-#envoyer{
+.button--Secondary{
     margin: 0;
     cursor: pointer;
     width: 150px;
@@ -167,6 +174,29 @@ textarea{
     width: 100%;
     overflow-y: scroll;
     padding: 5px;
+}
+
+/*Icône*/
+#icone_modale{
+    font-size: 30rem;
+    color: #31b86b;
+}
+
+#container_modale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal_valide {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
 }
 
 /* ---------RESPONSIVE MODAL---------- */
