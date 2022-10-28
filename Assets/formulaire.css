@@ -46,7 +46,7 @@ textarea{
 
 /*----INPUT FILE----*/
 #projet_fichier{
-    opacity: 0;
+    opacity: 1;
     bottom: 106px;
     position: absolute;
     width: 200px;
@@ -85,7 +85,7 @@ textarea{
     justify-content: space-around;
 }
 
-#annuler{
+.annuler{
     width: 150px;
     color: #2c3e4a;
     font-weight: bold;
@@ -176,6 +176,7 @@ textarea{
     padding: 5px;
 }
 
+/* -----MODAL VALIDATION ANNULATION------ */
 /*Icône*/
 #icone_modale{
     font-size: 30rem;
@@ -189,10 +190,10 @@ textarea{
     justify-content: space-around;
 }
 
-.modal_valide {
+#modal_valide {
     display: none;
     position: fixed;
-    z-index: 100000;
+    z-index: 2;
     left:0;
     top:0;
     width: 100%;

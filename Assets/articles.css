@@ -27,7 +27,7 @@
     }
 
     .art_picture {
-        width: 30%;
+        width: 50vh;
         object-fit: cover;
     }
 }
