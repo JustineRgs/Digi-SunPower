@@ -7,18 +7,35 @@ let form = document.querySelector('#form_1');
 // On selectionne tout les imput qui ont la classe 'obligatoire'
 let obligatoire = form.querySelectorAll('.obligatoire');
 
+var pouet = false;
+
 // ForEach boucle sur tout les imput du tableau
 obligatoire.forEach(input => {
     input.addEventListener('change', function() {
-    validOblig(this);
+        validOblig(input);
     })
 });
+// check si tout les éléments sont ok, dés que 1 n'est pas ok -> sortie de la boucle
+function patate() {
+    for (const input of obligatoire) {
+        validOblig(input);
+        if (!pouet) {
+            return false;
+        }
+        input.addEventListener('change', function() {
+            validOblig(input);
+        })
+    }
+    return true;
+}
 
 // On définit la fonction
 function validOblig(inputOblig) {
     let msg;
     let valid = false;
+    pouet = false;
     //min 3 caractères
+
     if(inputOblig.value.length < 2) {
         msg = 'Ce champ est obligatoire';
     }
@@ -38,6 +55,7 @@ function validOblig(inputOblig) {
         small.innerHTML = 'Champ valide';
         small.classList.remove('text-danger');
         small.classList.add('text-success');
+        pouet = true
     }
     else {
         small.innerHTML = msg;
@@ -54,6 +72,7 @@ form.mail.addEventListener('change', function() {
 
 // Création de la reg exp de validation du mail
 function validMail(inputMail) {
+    let valid = false;
     let mailRegExp = new RegExp(
         "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
     );
@@ -66,12 +85,14 @@ function validMail(inputMail) {
         small.innerHTML = 'Adresse valide';
         small.classList.remove('text-danger');
         small.classList.add('text-success');
+        valid = true;
     }
     else {
         small.innerHTML = 'Adresse non valide';
         small.classList.remove('text-success');
         small.classList.add('text-danger');
     }
+    return valid;
 };
 
 // *-------NUMERO DE TELEPHONE-------*
@@ -104,6 +125,8 @@ function validTel(inputTel) {
         small.classList.remove('text-success');
         small.classList.add('text-danger');
     }
+    return valid;
+
 };
 
 // *-------CODE POSTAL-------*
@@ -137,6 +160,8 @@ function validCP(inputCP) {
         small.classList.remove('text-success');
         small.classList.add('text-danger');
     }
+    return valid;
+
 };
 
 // *------- ADRESSE -------*
@@ -171,4 +196,56 @@ function valid_adresse(inputAD) {
         small.classList.remove('text-success');
         small.classList.add('text-danger');
     }
+    return valid;
 };
+
+// *------- PROJET -------*
+// Ecoute la modification du champs PROJET
+form.projet.addEventListener('change', function() {
+    valid_projet(this);
+});
+
+// On définit la fonction
+function valid_projet(inputP) {
+    let msg;
+    let valid = false;
+    //min 2 caractères
+    if(inputP.value.length < 20) {
+        msg = 'Format attendue : 20 caractères minimum';
+    }
+    else {
+        valid = true;
+    }
+
+    //On recupere la balise 'small'
+    let small = inputP.nextElementSibling;
+    
+    //On test 'valid'
+    if (valid) {
+        small.innerHTML = 'Champ valide';
+        small.classList.remove('text-danger');
+        small.classList.add('text-success');
+    }
+    else {
+        small.innerHTML = msg;
+        small.classList.remove('text-success');
+        small.classList.add('text-danger');
+    }
+    return valid;
+};
+
+// *------- SUBMIT FORM -------*
+//Ecoute soumission du formulaire
+let modalvalide = document.querySelector("#modal_valide");
+form.button.addEventListener('click', (e) => {
+    e.preventDefault();
+    obligatoire.forEach(input => {validOblig(input)});
+    validMail(form.mail);
+    validTel(form.numero_telephone);
+    validCP(form.code_postal);
+    valid_adresse(form.adresse);
+    valid_projet(form.projet);
+    if (patate() && validMail(form.mail) && validTel(form.numero_telephone) && validCP(form.code_postal) && valid_adresse(form.adresse) && valid_projet(form.projet)) {
+        modalvalide.style.display = "block";
+    }
+})
