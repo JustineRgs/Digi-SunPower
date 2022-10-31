@@ -1,4 +1,8 @@
 // ---------------MODAL CONTACT 1 --------------
+import formulaire1 from "./form.js";
+import formulaire2 from "./form2.js";
+import formulaire3 from "./form3.js";
+
 // Je déclare mes variables 
 let overlay = document.getElementById("overlay_1");
 let contact = document.getElementById("contact_1");
@@ -6,6 +10,7 @@ let span_close = document.getElementsByClassName("close1")[0];
 
 // Au click -> overlay passe de none -> block et body sans scroll
 contact.addEventListener('click', () => {
+    formulaire1();
     overlay.style.display = "block" ;
     document.body.style.overflow = "hidden";
 })
@@ -32,6 +37,7 @@ let span_close2 = document.getElementsByClassName("close2")[0];
 
 // Au click -> overlay passe de none -> block et body sans scroll
 contact2.addEventListener('click', () => {
+    formulaire2();
     overlay2.style.display = "block" ;
     document.body.style.overflow = "hidden";
 })
@@ -58,6 +64,7 @@ let span_close3 = document.getElementsByClassName("close3")[0];
 
 // Au click -> overlay passe de none -> block et body sans scroll
 contact3.addEventListener('click', () => {
+    formulaire3();
     overlay3.style.display = "block" ;
     document.body.style.overflow = "hidden";
 })

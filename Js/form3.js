@@ -1,13 +1,10 @@
-// ** 'change' -- test au moment ou l'utilisateur clique dans un autre champs
-
-export default function formulaire1() {
+//---------------------------------------------------------------------------------------------------------------
+export default function formulaire3() {
     // On recupère tout le formulaire
-    let form = document.querySelector('#form_1');
-
+    let form = document.querySelector('#form_3');
     // *------- CHAMPS OBLIGATOIRE-------*
     // On selectionne tout les imput qui ont la classe 'obligatoire'
-    let obligatoire = form.querySelectorAll('.obligatoire');
-
+    let obligatoire = form.querySelectorAll('.obligatoire3');
     var verif = false;
 
     // ForEach boucle sur tout les imput du tableau
@@ -67,7 +64,7 @@ export default function formulaire1() {
 
     // *-------ADRESSE MAIL-------*
     // Ecoute la modification du champ MAIL
-    form.mail.addEventListener('change', function() {
+    form.mail3.addEventListener('change', function() {
         validMail(this);
     });
 
@@ -98,7 +95,7 @@ export default function formulaire1() {
 
     // *-------NUMERO DE TELEPHONE-------*
     // Ecoute la modification du champs TEL
-    form.numero_telephone.addEventListener('change', function() {
+    form.numero_telephone3.addEventListener('change', function() {
         validTel(this);
     });
 
@@ -132,7 +129,7 @@ export default function formulaire1() {
 
     // *-------CODE POSTAL-------*
     // Ecoute la modification du champs CP
-    form.code_postal.addEventListener('change', function() {
+    form.code_postal3.addEventListener('change', function() {
         validCP(this);
     });
 
@@ -167,7 +164,7 @@ export default function formulaire1() {
 
     // *------- ADRESSE -------*
     // Ecoute la modification du champs ADRESSE
-    form.adresse.addEventListener('change', function() {
+    form.adresse3.addEventListener('change', function() {
         valid_adresse(this);
     });
 
@@ -202,7 +199,7 @@ export default function formulaire1() {
 
     // *------- PROJET -------*
     // Ecoute la modification du champs PROJET
-    form.projet.addEventListener('change', function() {
+    form.projet3.addEventListener('change', function() {
         valid_projet(this);
     });
 
@@ -258,16 +255,16 @@ export default function formulaire1() {
     // *------- SUBMIT FORM -------*
     //Ecoute soumission du formulaire
     let modalvalide = document.querySelector("#modal_valide");
-    form.button.addEventListener('click', (e) => {
+    form.button3.addEventListener('click', (e) => {
         e.preventDefault();
         obligatoire.forEach(input => {validOblig(input)});
-        validMail(form.mail);
-        validTel(form.numero_telephone);
-        validCP(form.code_postal);
-        valid_adresse(form.adresse);
-        valid_projet(form.projet);
+        validMail(form.mail3);
+        validTel(form.numero_telephone3);
+        validCP(form.code_postal3);
+        valid_adresse(form.adresse3);
+        valid_projet(form.projet3);
         // si tout les éléments return true alors display block
-        if (fin_boucle() && validMail(form.mail) && validTel(form.numero_telephone) && validCP(form.code_postal) && valid_adresse(form.adresse) && valid_projet(form.projet)) {
+        if (fin_boucle() && validMail(form.mail3) && validTel(form.numero_telephone3) && validCP(form.code_postal3) && valid_adresse(form.adresse3) && valid_projet(form.projet3)) {
             modalvalide.style.display = "block";
         }
     })
