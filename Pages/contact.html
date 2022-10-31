@@ -35,9 +35,9 @@
                 <!-- FIN LOGO -->
  
                 <!-- ICONE MENU BURGER -->
-                <div id="nav_bar_burger">
-                    <ion-icon id="nav_bar_burger_icon" name="menu-outline">
-                </div>
+                <button id="nav_bar_burger">
+                    <ion-icon id="nav_bar_burger_icon" name="menu-outline"></ion-icon>
+                </button>
                 <!-- FIN ICONE MENU BURGER -->
  
                 <!-- NAV DEKSTOP -->
@@ -233,70 +233,99 @@
             </div>
             <!-- MODAL BODY -->
             <div class="modal_body">
-                <form>
+                <form id="form">
                     <h3>Coordonnées</h3>
-        
+                        
                     <p class="form_p">Tous les champs sont obligatoires</p>
-        
+                        
                     <!-- DEBUT PREMIER FIELDSET -->
                     <fieldset class="fieldset">
-                       <label for="raison_sociale">Raison sociale</label>
-                        <input type="text" maxlength="50" name="raison_sociale"   id="raison_sociale" autofocus required> 
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="raison_sociale">Raison sociale</label>
+                                <input type="text" maxlength="50" name="raison_sociale" class="obligatoire"> 
+                                <small></small>
+                            </div>
+                            <div class="flex-container2">
+                                <label for="mail">Adresse mail</label>
+                                <input type="email" maxlength="50" name="mail" id="mail">
+                                <small></small>
+                            </div>
+                        </div>
                         <div class="flex-container1">
                             <div class="flex-container2">
                                 <label for="nom_responsable">Nom du responsable</label>
-                                <input type="text" maxlength="50" name="nom_responsable" id="nom_responsable" required>
+                                <input type="text" maxlength="50" name="nom_responsable" class="obligatoire">
+                                <small></small>
                             </div>
                             <div class="flex-container2">
                                 <label for="prenom_responsable">Prénom du responsable</label>
-                                <input type="text" maxlength="50" name="prenom_responsable" id="prenom_responsable" required>
+                                <input type="text" maxlength="50" name="prenom_responsable" class="obligatoire">
+                                <small></small>
                             </div>
                         </div>
                         <div class="flex-container1">
                             <div class="flex-container2">
                                 <label for="qualite_responsable">Qualité du responsable</label>
-                                <input type="text" maxlength="50" name="qualite_responsable" id="qualite_responsable" required>
+                                <input type="text" maxlength="50" name="qualite_responsable" class="obligatoire">
+                                <small></small>
                             </div>
                             <div class="flex-container2">
                                 <label for="numero_telephone">Numéro de téléphone</label>
-                                <input type="tel" maxlength="10" pattern="[0-9]{10}" name="numero_telephone" id="numero_telephone" required>
+                                <input type="tel" maxlength="10" pattern="[0-9]{10}" name="numero_telephone" id="numero_telephone">
+                                <small></small>
                             </div>
                         </div>
                     </fieldset>
                     <!-- FIN PREMIER FIELDSET -->
-        
+                    
                     <h3>Adresse</h3>
-        
+                    
                     <!-- DEBUT DEUXIEME FIELDSET -->
                     <fieldset class="fieldset">
-                        <label for="adresse">Adresse</label>
-                        <input type="text" maxlength="50" name="adresse" id="adresse" required> 
-        
+                        <div>
+                            <label for="adresse">Adresse</label>
+                            <input type="text" name="adresse" maxlength="50" id="adresse">
+                            <small></small> 
+                        </div>
+                        
                         <label for="adresse_complement">Complément d'adresse (facultatif)</label>
-                        <input type="text" maxlength="50" name="adresse_complement" id="adresse_complement">
-        
-                        <label for="code_postal">Code postal</label>
-                        <input type="text" maxlength="5" pattern="[0-9]{5}" name="code_postal" id="code_postal" required>
-        
-                        <label for="ville">Ville</label>
-                        <input type="text" maxlength="50" name="ville" id="ville" required>
-                     </fieldset>
+                        <input type="text" name="adresse_complement" maxlength="50">
+                        
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="code_postal">Code postal</label>
+                                <input type="text" maxlength="5" name="code_postal" id="code_postal">
+                                <small></small>
+                            </div>
+                            <div class="flex-container2">
+                                <label for="ville">Ville</label>
+                                <input type="text" name="ville" class="obligatoire">
+                                <small></small>
+                            </div>
+                        </div>
+
+                        
+
+                    </fieldset>
                     <!-- FIN DEUXIEME FIELDSET -->
-        
-                     <h3>Votre projet</h3>
-        
+                    
+                    <h3>Votre projet</h3>
+                    
                     <!-- DEBUT TROISIEME FIELDSET -->
                     <fieldset class="fieldset">
                         <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères max)</span> :</label>
-                        <textarea maxlength="500" rows="10" name="projet" id="projet" required></textarea>
-        
+                        <textarea rows="10" name="projet" id="projet" ></textarea>
+                        <small></small>
+                        
                         <p id="text_input_file">Joindre un fichier</p> 
                         <label id="projet_fichier_label" for="">Choisir le fichier <ion-icon name="download-outline"></ion-icon></label>
-                        <input type="file" accept=".pdf" name="projet_fichier" id="projet_fichier" required>
+                        <input type="file" accept=".pdf" name="projet_fichier" id="projet_fichier">
                         <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
-                     </fieldset>
+                        <small></small>
+                    </fieldset>
                     <!-- FIN TROISIEME FIELDSET -->
-        
+                    
                     <!-- DEBUT PIED DE PAGE -->
                     <div id="container_button">
                         <button><a class="annuler" href="./contact.html">Annuler</a></button>
@@ -304,11 +333,13 @@
                     </div>
                     <!-- FIN PIED DE PAGE -->
                 </form>
+                <!-- FIN BLOC FORMULAIRE -->
             </div>
             <!-- FIN MODAL BODY -->
         </div>
         <!-- FIN MODAL -->
     </div>
+                
     <!-- FIN MODAL CONTACT 2 -->
 
         <!------------ MODAL CONTACT 2 ---------->
