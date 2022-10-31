@@ -76,15 +76,5 @@ overlay3.addEventListener('mousedown', (event) => {
     }
 })
 
-// ---------------POP UP VALIDE --------------
-
-let modal_valide = document.getElementById("modal_valide");
-let envoyer = document.getElementsByClassName("button--Secondary");
-
-envoyer.onclick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    modal_valide.style.display = "block" ;
-    console.log('pouet');
-}
+// --------------- MODAL VALIDE --------------
 
