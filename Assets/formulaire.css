@@ -55,40 +55,52 @@ textarea{
 }
 
 /*----INPUT FILE----*/
-#projet_fichier{
-    opacity: 1;
-    bottom: 106px;
+.block_download {
+    bottom: 0;
+    position: relative;
+    display: flex;
+}
+
+.projet_fichier_input{
     position: absolute;
-    width: 200px;
+    bottom: 0;
+    opacity: 0;
+    width: 150px;
 }
 
-#file-upload-button{
-    background-color: #fefefe;
+.projet_fichier_input::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; 
+    left: 0;
+    top: 0;   
 }
 
-#text_input_file{
-    color: black;
-    font-style: normal;
-}
-
-#projet_fichier_label{
+.projet_fichier_label{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
-    height: 35px;
+    width: 150px;
+    height: 27px;
     background-color: #1DD3B0;
     border-radius: 5px;
     text-transform: uppercase;
     padding-left: 10px;
-    cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
 }
 
-#projet_fichier_label ion-icon{
+.projet_fichier_label ion-icon{
     font-size: 20px;
 }
 
-
+.file_selection {
+    font-style: italic;
+    font-size: 12px;
+    color: #1DD3B0;
+}
 /*----BOUTON FIN DE PAGE----*/
 #container_button{
     display: flex;

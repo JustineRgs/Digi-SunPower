@@ -1,4 +1,4 @@
-// ** 'change' -- test au moment ou l'utilisateur clique dans un autre champs
+    // ** 'change' -- test au moment ou l'utilisateur clique dans un autre champs
 
 // On recupère tout le formulaire
 let form = document.querySelector('#form_1');
@@ -233,6 +233,26 @@ function valid_projet(inputP) {
     }
     return valid;
 };
+
+
+//BUTTON DOWNLOAD FILES 
+let fichier = document.querySelector('.projet_fichier_input');
+let files = document.querySelector('.file_selection');
+
+//Je demande qu'au changement de fichier, la div "files" récupere la selection et l'insere en html
+// Si vide ou undefined -> msg erreur
+if (!fichier.files[0]) {
+    files.innerHTML = 'Aucun fichier selectionné'
+}
+fichier.addEventListener('change', () => {
+    if ((fichier?.files[0]?.name) === undefined || (fichier.files[0]) === null) {
+        files.innerHTML = 'Aucun fichier selectionné'
+    }
+    else {
+        files.innerHTML = (fichier?.files[0]?.name)
+    }
+})
+
 
 // *------- SUBMIT FORM -------*
 //Ecoute soumission du formulaire

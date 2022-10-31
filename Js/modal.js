@@ -76,5 +76,3 @@ overlay3.addEventListener('mousedown', (event) => {
     }
 })
 
-// --------------- MODAL VALIDE --------------
-
