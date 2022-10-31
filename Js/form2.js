@@ -234,8 +234,8 @@ export default function formulaire2() {
 
 
     //BUTTON DOWNLOAD FILES 
-    let fichier = document.querySelector('.projet_fichier_input');
-    let files = document.querySelector('.file_selection');
+    let fichier = form.querySelector('.projet_fichier_input');
+    let files = form.querySelector('.file_selection');
 
     //Je demande qu'au changement de fichier, la div "files" récupere la selection et l'insere en html
     // Si vide ou undefined -> msg erreur
@@ -254,7 +254,8 @@ export default function formulaire2() {
 
     // *------- SUBMIT FORM -------*
     //Ecoute soumission du formulaire
-    let modalvalide = document.querySelector("#modal_valide");
+    let overlay2 = document.getElementById("overlay_2");
+    let modalvalide = document.querySelector(".modal_valide");
     form.button2.addEventListener('click', (e) => {
         e.preventDefault();
         obligatoire.forEach(input => {validOblig(input)});
@@ -266,6 +267,7 @@ export default function formulaire2() {
         // si tout les éléments return true alors display block
         if (fin_boucle() && validMail(form.mail2) && validTel(form.numero_telephone2) && validCP(form.code_postal2) && valid_adresse(form.adresse2) && valid_projet(form.projet2)) {
             modalvalide.style.display = "block";
+            overlay2.style.display = "none";
         }
     })
 }

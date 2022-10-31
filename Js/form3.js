@@ -4,7 +4,7 @@ export default function formulaire3() {
     let form = document.querySelector('#form_3');
     // *------- CHAMPS OBLIGATOIRE-------*
     // On selectionne tout les imput qui ont la classe 'obligatoire'
-    let obligatoire = form.querySelectorAll('.obligatoire3');
+    let obligatoire = form.querySelectorAll('.obligatoire');
     var verif = false;
 
     // ForEach boucle sur tout les imput du tableau
@@ -234,8 +234,8 @@ export default function formulaire3() {
 
 
     //BUTTON DOWNLOAD FILES 
-    let fichier = document.querySelector('.projet_fichier_input');
-    let files = document.querySelector('.file_selection');
+    let fichier = form.querySelector('.projet_fichier_input');
+    let files = form.querySelector('.file_selection');
 
     //Je demande qu'au changement de fichier, la div "files" récupere la selection et l'insere en html
     // Si vide ou undefined -> msg erreur
@@ -254,7 +254,8 @@ export default function formulaire3() {
 
     // *------- SUBMIT FORM -------*
     //Ecoute soumission du formulaire
-    let modalvalide = document.querySelector("#modal_valide");
+    let overlay3 = document.getElementById("overlay_3");
+    let modalvalide = document.querySelector(".modal_valide");
     form.button3.addEventListener('click', (e) => {
         e.preventDefault();
         obligatoire.forEach(input => {validOblig(input)});
@@ -266,6 +267,7 @@ export default function formulaire3() {
         // si tout les éléments return true alors display block
         if (fin_boucle() && validMail(form.mail3) && validTel(form.numero_telephone3) && validCP(form.code_postal3) && valid_adresse(form.adresse3) && valid_projet(form.projet3)) {
             modalvalide.style.display = "block";
+            overlay3.style.display = "none";
         }
     })
 }
