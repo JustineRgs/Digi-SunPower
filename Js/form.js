@@ -209,7 +209,7 @@ form.projet.addEventListener('change', function() {
 function valid_projet(inputP) {
     let msg;
     let valid = false;
-    //min 2 caractères
+    //min 20 caractères
     if(inputP.value.length < 20) {
         msg = 'Format attendue : 20 caractères minimum';
     }
