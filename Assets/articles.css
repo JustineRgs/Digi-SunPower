@@ -1,4 +1,4 @@
-/* ------------ARTICLE 1------------ */
+/* ------------ ARTICLE 1 ------------ */
 .art_picture {
     width: 70%;
 }
@@ -7,7 +7,7 @@
     margin : 15px;
 }
 
-/* REPONSIVE ARTICLE 1 */
+/* -------------------- REPONSIVE ARTICLE 1 --------------------  */
 @media (max-width: 649px) {
     .art_picture{
         transform: translateX(20%);
@@ -31,8 +31,6 @@
         object-fit: cover;
     }
 }
-
-
 
 /* ------------ARTICLE 2------------ */
 .article_2{

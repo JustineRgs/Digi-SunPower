@@ -16,7 +16,7 @@
     margin: 0 20px 35px 20px;
 }
 
-/* ----------RESPONSIVE---------- */
+/* --------------------RESPONSIVE-------------------- */
 @media (min-width: 650px) {
    .container_contact {
        display : flex;

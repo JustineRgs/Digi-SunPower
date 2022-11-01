@@ -51,7 +51,7 @@ footer{
 }
 
 
-/* --------RESPONSIVE-------- */
+/* ------------------RESPONSIVE------------------ */
 @media (min-width: 650px) {
     footer {
         display: flex;

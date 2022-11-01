@@ -1,4 +1,4 @@
-/* <!------------ NAVBAR ------------> */
+/* <!-- NAVBAR --> */
 nav{
     position: fixed;
     top: 0;
@@ -84,7 +84,7 @@ nav{
     }
 }
 
-/* ------------------BANIERE---------------- */
+/* --BANNER-- */
 #banner {
     position: relative;
     display: flex;
@@ -160,9 +160,7 @@ nav{
         color:#31B86B;
     }
 
-
     /* BANNER */
-
     #banner {
         margin: 71px 0 60px;
     }
@@ -174,7 +172,14 @@ nav{
     }
 }
 
+
 @media (min-width : 1100px) {
+    /* NAVBAR */
+    #navbar_liste {
+        font-size: 16px;
+    }
+
+    /* BANNER */
     #banner {
         margin: 71px 0 80px;
     }
@@ -183,12 +188,11 @@ nav{
         height: 60vh;
     }
 
-    #navbar_liste {
-        font-size: 16px;
-    }
 }
 
+
 @media (min-width : 1500px) {
+    /* NAVBAR */
     #navbar_liste {
         font-size: 20px;
     }

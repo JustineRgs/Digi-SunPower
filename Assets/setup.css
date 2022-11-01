@@ -75,7 +75,6 @@ html {
 }
 
 body {
-  /* overflow-x: hidden; */
   height: 100vh;
   font-size: 13px;
   font-weight: 300;
@@ -91,7 +90,7 @@ ion-icon {
 }
 
 
-/* -----------RESPONSIVE------------- */
+/* ------------------RESPONSIVE--------------------- */
 @media (min-width: 470px ) {
  
   h1 {

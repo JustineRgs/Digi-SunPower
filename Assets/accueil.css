@@ -27,12 +27,12 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    animation-name: redBox;
+    animation-name: car_boite;
     animation-duration: 7s;
     animation-iteration-count: infinite;
   }
 
-  @keyframes redBox {
+  @keyframes car_boite {
     0% {
       left: -200px;
     }
@@ -58,7 +58,7 @@
     width: 80%;
 }
 
-/* ------------RESPONSIVE------------ */
+/* ----------------------RESPONSIVE---------------------- */
 
 @media (min-width: 650px) {
     /* ------PARTIE FONDATEURS------ */

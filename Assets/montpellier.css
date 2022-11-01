@@ -1,4 +1,4 @@
-/* <!------------ MAP ------------> */
+/* <!-- MAP --> */
 .mapouter{
     text-align:center;
     width: 100%;
@@ -18,7 +18,7 @@
     height: 100%;
 }
 
-/* <!------------ RESPONSIVE ------------> */
+/* <!---------------------- RESPONSIVE ----------------------> */
 @media (min-width: 650px){
     .gmap_canvas {
         height: 400px;

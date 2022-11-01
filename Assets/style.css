@@ -1,3 +1,4 @@
+/* --STYLE -- */
 hr {
     width: 35%;
     margin-bottom: 30px;
@@ -7,7 +8,8 @@ section {
     margin: 40px auto;
     width: 90%;
 }
-/* --------STYLE BOUTTON--------- */
+
+/* --STYLE BOUTTON-- */
 .button {
     display: inline-block;
 	background-color: #affc41;
@@ -28,7 +30,7 @@ section {
     color: #fefefe;
 }
 
-/* ---------MENTIONS LEGALES--------- */
+/* --MENTIONS LEGALES-- */
 .articleML{
     margin-top:80px;
     text-align: justify;

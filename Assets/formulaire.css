@@ -1,4 +1,4 @@
-/* -----TEXTE----- */
+/* --TEXTE--*/
 #form_h2{
     padding: 0 0 0 10px;
 }
@@ -28,7 +28,7 @@ h3 {
     font-size: 9px;
 }
 
-/* ----FORMULAIRE---- */
+/* --FORMULAIRE-- */
 form{
     padding: 0 20px 0 15px;
 }
@@ -126,7 +126,7 @@ textarea{
 }
 
 
-/* ---------RESPONSIVE FORMULAIRE---------- */
+/* -------------------RESPONSIVE FORMULAIRE-------------------- */
 @media(min-width: 750px){
     .flex-container1{
         width: 100%;
@@ -161,7 +161,7 @@ textarea{
     }
 }
 
-/* --------------------------------------------------------- */
+/* -------------------------- MODAL ------------------------------- */
 
 /* -----MODAL------ */
 .overlay{
@@ -244,7 +244,7 @@ textarea{
     height: 30%;
 }
 
-/* ---------RESPONSIVE MODAL---------- */
+/* -----------------------------RESPONSIVE MODAL------------------------------ */
 @media (min-width: 650px) {
     .modal {
         width: 60%;
