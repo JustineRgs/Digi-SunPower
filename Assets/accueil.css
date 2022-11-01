@@ -25,10 +25,10 @@
 
 #boite {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     animation-name: redBox;
-    animation-duration: 4s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
   }
 

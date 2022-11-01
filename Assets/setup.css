@@ -10,7 +10,7 @@ h1 {
   font-size: 16px;
   color: #fefefe;
   margin: 0;
-
+  text-shadow: 3px 1px 2px #2c3e4a;
 }
 
 h2 {
@@ -92,6 +92,16 @@ ion-icon {
 
 
 /* -----------RESPONSIVE------------- */
+@media (min-width: 470px ) {
+ 
+  h1 {
+    font-size: 21px;
+    color: #fefefe;
+  }
+}
+
+
+
 @media (min-width: 650px ) {
  
   h1 {

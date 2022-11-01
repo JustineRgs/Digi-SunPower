@@ -11,7 +11,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 72px;
     backdrop-filter: blur(5px);
     box-shadow: 0px 3px 10px rgba(49,184,107, 0.45);
@@ -30,7 +30,6 @@ nav{
         display: flex;
         justify-content: end;
         padding: 10px 20px;
-        width: 100vw;
     }
 
     #nav_bar_burger_icon{
@@ -39,16 +38,24 @@ nav{
         pointer-events: none;
     }
 
-    #navbar_dekstop {
+    .navbar_dekstop {
+        visibility: hidden;
         display: flex;
         flex-direction: column;
         position: absolute;
-        right: -390px;
-        top: 70px;
+        right: -750px;
+        top: 52px;
         width: 588px;
         height: 378px;
         background-color: rgb(49 184 107 / 70%);
         border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .transition_nav{
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+        right: -375px;
     }
 
     #navbar_liste{
@@ -71,6 +78,7 @@ nav{
     }
 
     .navbar_item ion-icon{
+        color:#2c3e4a;
         font-size: 24px;
         margin-left: 5px;
     }
@@ -94,7 +102,8 @@ nav{
 
 #banner_img {
     width: 100vw;
-    height: 30vh;
+    height: 35vh;
+    filter: blur(1px)contrast(100%);;
 }
 
 
@@ -114,7 +123,7 @@ nav{
         display: none;
     }
 
-    #navbar_dekstop {
+    .navbar_dekstop {
         display: flex;
         justify-content: end;
         width: 80%;
@@ -131,7 +140,6 @@ nav{
         white-space: nowrap;
         visibility: visible;
     }
-
 
     .navbar_item {
         display: flex;
