@@ -15,6 +15,32 @@
     border-radius: 20px;
 }
 
+/* ------ANIMATION------ */
+.car{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+#boite {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation-name: redBox;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes redBox {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: calc(100% + 100px);
+    }
+  }
+
 /* ------PARTIE PARTENAIRES------ */
 #container_partenaire{
     margin: 30px 0 40px 0;

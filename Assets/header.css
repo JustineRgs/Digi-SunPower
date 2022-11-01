@@ -15,6 +15,7 @@ nav{
     height: 72px;
     backdrop-filter: blur(5px);
     box-shadow: 0px 3px 10px rgba(49,184,107, 0.45);
+    position: relative;
 }
 
 #navbar_logo{
@@ -24,62 +25,81 @@ nav{
     width: 165px;
 }
 
-/* NAVBAR DEKSTOP */
-#navbar_dekstop{
-    display: none;
-}
+@media (max-width: 649px){
+    #nav_bar_burger{
+        display: flex;
+        justify-content: end;
+        padding: 10px 20px;
+        width: 100vw;
+    }
 
-/* <!------------ MENU BURGER ------------> */
-#nav_bar_burger{
-    display: flex;
-    justify-content: end;
-    padding: 10px 20px;
-    width: 100vw;
-}
+    #nav_bar_burger_icon{
+        color: #2C3E4A;
+        font-size: 40px;
+        pointer-events: none;
+    }
 
-#nav_bar_burger_icon{
-    color: #2C3E4A;
-    font-size: 40px;
-    pointer-events: none;
-}
+    #navbar_dekstop {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 73px;
+        bottom : calc(0px - 195px);
+        right: 0;
+        width: 100%;
+        animation-name: Burgerbox;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+        @keyframes Burgerbox {
+            0% {
+                height: 100%;
+            }
+            50% {
+                height: 50%;
+            }
+            100% {
+                height: 0%;
+            }
+    }
+    
+        #navbar_dekstop:after {
+            bottom: 100%;
+        }
 
-#nav_bar_burger_block {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    visibility: hidden;  
-  }
+        #navbar_dekstop:hover:after {
+            bottom: 0;
+        }
 
+    #navbar_liste{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 15em;
+        width: 100%;
+        background-color: rgb(49 184 107 / 44%);
+        backdrop-filter: blur(5px)
+    }
 
-#nav_bar_burger_liste{
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 15em;
-    width: 100%;
-    background-color: rgb(49 184 107 / 44%);
-    backdrop-filter: blur(5px)
-}
+    .navbar_item{
+        color:#fefefe;
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: solid 1px #2C3E4A;
+        text-shadow: 3px 1px 2px #2c3e4a
+    }
 
-#nav_bar_burger_liste li{
-    color:#fefefe;
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    border-bottom: solid 1px #2C3E4A;
-    text-shadow: 3px 1px 2px #2c3e4a
-}
+    .navbar_item:nth-child(5){
+        border-bottom: 0;
+    }
 
-#nav_bar_burger_liste li:nth-child(5){
-    border-bottom: 0;
-}
-
-#nav_bar_burger_liste li ion-icon{
-    font-size: 24px;
-    margin-left: 5px;
+    .navbar_item ion-icon{
+        font-size: 24px;
+        margin-left: 5px;
+    }
 }
 
 /* ------------------BANIERE---------------- */
@@ -105,7 +125,6 @@ nav{
 
 
 /* <!-------------------------------------- RESPONSIVE -------------------------------> */
-
 @media (min-width: 650px){
     /* NAVBAR */
     nav{
@@ -136,6 +155,7 @@ nav{
         font-weight: bold;
         color: #086375;
         white-space: nowrap;
+        visibility: visible;
     }
 
 
@@ -146,8 +166,6 @@ nav{
     }
 
     .navbar_item:hover{
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
 

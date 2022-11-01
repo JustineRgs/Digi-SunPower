@@ -2,7 +2,7 @@
 const burgerBouton = document.getElementById("nav_bar_burger");
 
 // On déclare une variable correspondant à l'élément du DOM du menu burger
-const burgerMenu = document.getElementById("nav_bar_burger_block")
+const burgerMenu = document.getElementById("navbar_dekstop")
 
 //On déclare des variables pointant sur le main et le footer
 const main = document.querySelector("main");
