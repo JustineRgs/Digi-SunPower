@@ -25,7 +25,7 @@ nav{
     width: 165px;
 }
 
-@media (max-width: 649px){
+@media (max-width: 650px){
     #nav_bar_burger{
         display: flex;
         justify-content: end;
@@ -43,44 +43,23 @@ nav{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 73px;
-        bottom : calc(0px - 195px);
-        right: 0;
-        width: 100%;
-        animation-name: Burgerbox;
-        animation-iteration-count: infinite;
-        animation-duration: 4s;
+        right: -390px;
+        top: 70px;
+        width: 588px;
+        height: 378px;
+        background-color: rgb(49 184 107 / 70%);
+        border-radius: 50%;
     }
-        @keyframes Burgerbox {
-            0% {
-                height: 100%;
-            }
-            50% {
-                height: 50%;
-            }
-            100% {
-                height: 0%;
-            }
-    }
-    
-        #navbar_dekstop:after {
-            bottom: 100%;
-        }
-
-        #navbar_dekstop:hover:after {
-            bottom: 0;
-        }
 
     #navbar_liste{
         z-index: 2;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        height: 15em;
-        width: 100%;
-        background-color: rgb(49 184 107 / 44%);
-        backdrop-filter: blur(5px)
+        position: absolute;
+        width: 40%;
+        height: 100%;
     }
 
     .navbar_item{
@@ -88,12 +67,7 @@ nav{
         margin: 0;
         font-size: 18px;
         font-weight: bold;
-        border-bottom: solid 1px #2C3E4A;
         text-shadow: 3px 1px 2px #2c3e4a
-    }
-
-    .navbar_item:nth-child(5){
-        border-bottom: 0;
     }
 
     .navbar_item ion-icon{
