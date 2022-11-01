@@ -35,7 +35,12 @@ footer{
     padding: 0 8px;
     background-color: #31B86B;
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 18px;
+    transition: ease-in-out 0.5s;
+}
+
+.icon:hover{
+    transform: rotate(180deg);
 }
 
 /* BLOC DROIT : MENTIONS LEGALES */

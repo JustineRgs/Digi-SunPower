@@ -39,4 +39,28 @@
     text-align: center;
 }
 
+.car{
+    width: 100%;
+    position: relative;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+#boite {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation-name: redBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes redBox {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: calc(100% + 100px);
+    }
+  }
 
