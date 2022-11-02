@@ -1,3 +1,5 @@
+//-------------- BURGER MENU --------------
+
 // On déclare une variable correspondant à l'élément du DOM du bouton burger
 const burgerBouton = document.getElementById("nav_bar_burger");
 
