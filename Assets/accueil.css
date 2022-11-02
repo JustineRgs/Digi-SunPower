@@ -28,16 +28,16 @@
     width: 80px;
     height: 80px;
     animation-name: car_boite;
-    animation-duration: 7s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
   @keyframes car_boite {
     0% {
-      left: -200px;
+      left: -50px;
     }
     100% {
-      left: calc(100% + 100px);
+      left: calc(100% + 50px);
     }
   }
 
@@ -71,6 +71,22 @@
     .fondateur_image{
         width: 90%;
     }
+
+    /* ------ANIMATION------ */
+    #boite {
+        animation-name: car_boite;
+        animation-duration: 6s;
+      }
+    
+      @keyframes car_boite {
+        0% {
+          left: -70px;
+        }
+        100% {
+          left: calc(100% + 70px);
+        }
+      }
+    
 
     /* ------PARTIE PARTENAIRES------ */
     #container_partenaire{
