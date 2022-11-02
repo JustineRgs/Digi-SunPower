@@ -29,3 +29,4 @@ main.addEventListener("click", () => {
 footer.addEventListener("click", () => {
     burgerMenu.classList.remove("transition_nav");
 });
+

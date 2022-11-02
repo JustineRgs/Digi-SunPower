@@ -36,7 +36,6 @@ export default function formulaire1() {
         let valid = false;
         verif = false;
         //min 3 caractères
-
         if(inputOblig.value.length < 2) {
             msg = 'Ce champ est obligatoire';
         }
@@ -56,7 +55,7 @@ export default function formulaire1() {
             small.innerHTML = 'Champ valide';
             small.classList.remove('text-danger');
             small.classList.add('text-success');
-            verif = true
+            verif = true;
         }
         else {
             small.innerHTML = msg;
