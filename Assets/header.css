@@ -102,7 +102,7 @@ nav{
 
 #banner_img {
     width: 100vw;
-    height: 35vh;
+    height: 25vh;
     filter: blur(1px)contrast(100%);
     object-fit: cover;
 }
@@ -168,7 +168,7 @@ nav{
 
     #banner_img {
         width: 100vw;
-        height: 45vh;
+        height: 35vh;
     }
 }
 
@@ -185,7 +185,7 @@ nav{
     }
 
     #banner_img {
-        height: 60vh;
+        height: 45vh;
     }
 
 }
