@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>SunPower | Nous contacter</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site de l'entreprise SunPower, vendeur d'ombrière solaire pour la recharge de voiture électrique. Gestionnaire de projets liés à l'environnement et l'énergie solaire.">
+    <meta name="description"
+        content="Site de l'entreprise SunPower, vendeur d'ombrière solaire pour la recharge de voiture électrique. Gestionnaire de projets liés à l'environnement et l'énergie solaire.">
     <meta name="authors" content="Justine Ragues, Sadadi Assani, Grégory Koch">
     <!-- Icones et styles -->
-    <link rel="icon" href="../Pictures/favicon.ico"/>
+    <link rel="icon" href="../Pictures/favicon.ico" />
     <link rel="stylesheet" href="../Assets/setup.css">
     <link rel="stylesheet" href="../Assets/header.css">
     <link rel="stylesheet" href="../Assets/footer.css">
@@ -25,6 +27,7 @@
     <script src="../Js/form2.js" type="module" defer></script>
     <script src="../Js/form3.js" type="module" defer></script>
 </head>
+
 <body>
     <!----------HEADER---------->
     <header>
@@ -32,7 +35,7 @@
         <nav role="navigation">
             <div id="navbar">
                 <!-- LOGO -->
-                <a href="../index.html" id="navbar_logo"><img src="../Pictures/LOGO.png" aria-label = "Logo SunPower"></a>
+                <a href="../index.html" id="navbar_logo"><img src="../Pictures/LOGO.png" aria-label="Logo SunPower"></a>
                 <!-- FIN LOGO -->
 
                 <!-- ICONE MENU BURGER -->
@@ -48,7 +51,8 @@
                         <li class="navbar_item"><a href="./ombrieres.html">Nos Ombrières</a></li>
                         <li class="navbar_item"><a href="./activites.html">Nos Activités</a></li>
                         <li class="navbar_item active"><a href="./contact.html">Nous Contacter</a></li>
-                        <li><a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a></li>
+                        <li><a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon
+                                    name="location-sharp"></ion-icon></a></li>
                     </ul>
                 </div>
                 <!-- FIN NAV -->
@@ -61,13 +65,13 @@
             <img src="../Pictures/Banniere_Contact.jpg" id="banner_img" alt="Image d'illustration">
             <h1 id="banner_title">Une question, un projet? Contactez-nous!</h1>
         </div>
-        <!------------ FIN BANNER ---------->  
+        <!------------ FIN BANNER ---------->
     </header>
     <!------------ FIN HEADER ---------->
-    
+
     <!------------ MAIN ---------->
-    <main>    
-        
+    <main>
+
         <!-- --------BLOC DES 3 CONTACTS-------- -->
         <h2 id="title">Vous êtes...</h2>
         <section class="article_2 container_contact">
@@ -106,15 +110,15 @@
             <div class="modal_body">
                 <form id="form_1">
                     <h3>Coordonnées</h3>
-                        
+
                     <p class="form_p">Tous les champs sont obligatoires</p>
-                        
-            <!-- 1 DEBUT PREMIER FIELDSET -->
+
+                    <!-- 1 DEBUT PREMIER FIELDSET -->
                     <fieldset class="fieldset">
                         <div class="flex-container1">
                             <div class="flex-container2">
                                 <label for="raison_sociale">Raison sociale</label>
-                                <input type="text" maxlength="50" name="raison_sociale" class="obligatoire"> 
+                                <input type="text" maxlength="50" name="raison_sociale" class="obligatoire">
                                 <small></small>
                             </div>
                             <div class="flex-container2">
@@ -148,21 +152,21 @@
                             </div>
                         </div>
                     </fieldset>
-            <!--1 FIN PREMIER FIELDSET -->
-                    
+                    <!--1 FIN PREMIER FIELDSET -->
+
                     <h3>Adresse</h3>
-                    
-            <!--1 DEBUT DEUXIEME FIELDSET -->
+
+                    <!--1 DEBUT DEUXIEME FIELDSET -->
                     <fieldset class="fieldset">
                         <div>
                             <label for="adresse">Adresse</label>
                             <input type="text" name="adresse" maxlength="50" id="adresse">
-                            <small></small> 
+                            <small></small>
                         </div>
-                        
+
                         <label for="adresse_complement">Complément d'adresse (facultatif)</label>
                         <input type="text" name="adresse_complement" maxlength="50">
-                        
+
                         <div class="flex-container1">
                             <div class="flex-container2">
                                 <label for="code_postal">Code postal</label>
@@ -176,32 +180,34 @@
                             </div>
                         </div>
                     </fieldset>
-            <!--1 FIN DEUXIEME FIELDSET -->
-                    
-                    <h3>Votre projet</h3>
-                    
-            <!--1 DEBUT TROISIEME FIELDSET -->
-                    <fieldset class="fieldset">
-                        <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères max)</span> :</label>
-                        <textarea rows="10" name="projet" id="projet" ></textarea>
-                        <small></small>
-                        <p id="text_input_file">Joindre un fichier (facultatif)</p> 
-                        <div class="block_download">
-                            <label role= button class="projet_fichier_label" for="">Choisir le fichier <ion-icon name="download-outline"></ion-icon></label>
+                    <!--1 FIN DEUXIEME FIELDSET -->
 
-                            <input type="file" accept=".pdf" name="projet_fichier"class="projet_fichier_input">
+                    <h3>Votre projet</h3>
+
+                    <!--1 DEBUT TROISIEME FIELDSET -->
+                    <fieldset class="fieldset">
+                        <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères
+                                max)</span> :</label>
+                        <textarea rows="10" name="projet" id="projet"></textarea>
+                        <small></small>
+                        <p id="text_input_file">Joindre un fichier (facultatif)</p>
+                        <div class="block_download">
+                            <label role=button class="projet_fichier_label" for="">Choisir le fichier <ion-icon
+                                    name="download-outline"></ion-icon></label>
+
+                            <input type="file" accept=".pdf" name="projet_fichier" class="projet_fichier_input">
                             <div class="file_selection"></div>
                         </div>
                         <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
                     </fieldset>
-            <!--1 FIN TROISIEME FIELDSET -->
-                    
-            <!--1 DEBUT PIED DE PAGE -->
+                    <!--1 FIN TROISIEME FIELDSET -->
+
+                    <!--1 DEBUT PIED DE PAGE -->
                     <div id="container_button">
                         <button><a class="annuler" href="./contact.html">Annuler</a></button>
                         <input class="button button--Secondary" id="button" type="submit" value="Envoyer">
                     </div>
-            <!--1 FIN PIED DE PAGE -->
+                    <!--1 FIN PIED DE PAGE -->
                 </form>
                 <!--1 FIN BLOC FORMULAIRE -->
             </div>
@@ -221,18 +227,18 @@
             </div>
             <!-- MODAL BODY -->
             <div class="modal_body">
-            <!-- 2 FORMULAIRE  -->
+                <!-- 2 FORMULAIRE  -->
                 <form id="form_2">
                     <h3>Coordonnées</h3>
-                        
+
                     <p class="form_p">Tous les champs sont obligatoires</p>
-                        
-            <!--2 DEBUT PREMIER FIELDSET -->
+
+                    <!--2 DEBUT PREMIER FIELDSET -->
                     <fieldset class="fieldset">
                         <div class="flex-container1">
                             <div class="flex-container2">
                                 <label for="raison_sociale">Raison sociale</label>
-                                <input type="text" maxlength="50" name="raison_sociale" class="obligatoire"> 
+                                <input type="text" maxlength="50" name="raison_sociale" class="obligatoire">
                                 <small></small>
                             </div>
                             <div class="flex-container2">
@@ -266,21 +272,21 @@
                             </div>
                         </div>
                     </fieldset>
-            <!--2 FIN PREMIER FIELDSET -->
-                    
+                    <!--2 FIN PREMIER FIELDSET -->
+
                     <h3>Adresse</h3>
-                    
-            <!--2 DEBUT DEUXIEME FIELDSET -->
+
+                    <!--2 DEBUT DEUXIEME FIELDSET -->
                     <fieldset class="fieldset">
                         <div>
                             <label for="adresse">Adresse</label>
                             <input type="text" name="adresse" maxlength="50" id="adresse2">
-                            <small></small> 
+                            <small></small>
                         </div>
-                        
+
                         <label for="adresse_complement">Complément d'adresse (facultatif)</label>
                         <input type="text" name="adresse_complement" maxlength="50">
-                        
+
                         <div class="flex-container1">
                             <div class="flex-container2">
                                 <label for="code_postal">Code postal</label>
@@ -294,32 +300,34 @@
                             </div>
                         </div>
                     </fieldset>
-            <!--2 FIN DEUXIEME FIELDSET -->
-                    
-                    <h3>Votre projet</h3>
-                    
-            <!--2 DEBUT TROISIEME FIELDSET -->
-            <fieldset class="fieldset">
-                <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères max)</span> :</label>
-                <textarea rows="10" name="projet" id="projet2" ></textarea>
-                <small></small>
-                <p id="text_input_file">Joindre un fichier (facultatif)</p> 
-                <div class="block_download">
-                    <label role= button class="projet_fichier_label" for="">Choisir le fichier <ion-icon name="download-outline"></ion-icon></label>
+                    <!--2 FIN DEUXIEME FIELDSET -->
 
-                    <input type="file" accept=".pdf" name="projet_fichier"class="projet_fichier_input">
-                    <div class="file_selection"></div>
-                </div>
-                <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
-            </fieldset>
-            <!--2 FIN TROISIEME FIELDSET -->
-                    
-            <!--2 DEBUT PIED DE PAGE -->
+                    <h3>Votre projet</h3>
+
+                    <!--2 DEBUT TROISIEME FIELDSET -->
+                    <fieldset class="fieldset">
+                        <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères
+                                max)</span> :</label>
+                        <textarea rows="10" name="projet" id="projet2"></textarea>
+                        <small></small>
+                        <p id="text_input_file">Joindre un fichier (facultatif)</p>
+                        <div class="block_download">
+                            <label role=button class="projet_fichier_label" for="">Choisir le fichier <ion-icon
+                                    name="download-outline"></ion-icon></label>
+
+                            <input type="file" accept=".pdf" name="projet_fichier" class="projet_fichier_input">
+                            <div class="file_selection"></div>
+                        </div>
+                        <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
+                    </fieldset>
+                    <!--2 FIN TROISIEME FIELDSET -->
+
+                    <!--2 DEBUT PIED DE PAGE -->
                     <div id="container_button">
                         <button><a class="annuler" href="./contact.html">Annuler</a></button>
                         <input class="button button--Secondary" id="button2" type="submit" value="Envoyer">
                     </div>
-            <!--2 FIN PIED DE PAGE -->
+                    <!--2 FIN PIED DE PAGE -->
                 </form>
                 <!-- FIN BLOC FORMULAIRE -->
             </div>
@@ -327,123 +335,125 @@
         </div>
         <!-- FIN MODAL -->
     </div>
-                
+
     <!-- FIN MODAL CONTACT 2 -->
 
     <!------------ MODAL CONTACT 3 ---------->
-        <div id="overlay_3" class="overlay">
-            <!-- MODAL -->
-            <div class="modal">
-                <div class="modal_head">
-                    <h2 id="form_h2">Particulier</h2>
-                    <span id="close" class="close3">&times;</span>
-                </div>
-                <!-- MODAL BODY -->
-                <div class="modal_body">
-                    <form id="form_3">
-                        <h3>Coordonnées</h3>
-            
-                        <p class="form_p">Tous les champs sont obligatoires</p>
-            
-                <!--3 DEBUT PREMIER FIELDSET -->
-                        <fieldset class="fieldset">
-                            <div class="flex-container1">
-                                <div class="flex-container2">
-                                    <label for="nom">Nom</label>
-                                    <input type="text" maxlength="50" name="nom" class="obligatoire">
-                                    <small></small>
-                                </div>
-                                <div class="flex-container2">
-                                    <label for="prenom">Prénom</label>
-                                    <input type="text" maxlength="50" name="prenom" class="obligatoire">
-                                    <small></small>
-                                </div>
-                            </div>
-                            <div class="flex-container1">
-                                <div class="flex-container2">
-                                    <label for="numero_telephone">Numéro de téléphone</label>
-                                    <input type="tel" maxlength="10" name="numero_telephone" id="numero_telephone3">
-                                    <small></small>
-                                </div>
-                                <div class="flex-container2">
-                                    <label for="mail">Adresse mail</label>
-                                    <input type="email" maxlength="50" name="mail" id="mail3">
-                                    <small></small>
-                                </div>
-                            </div>
-                        </fieldset>
-                <!--3 FIN PREMIER FIELDSET -->
-            
-                        <h3>Adresse</h3>
-            
-                <!--3 DEBUT DEUXIEME FIELDSET -->
-                        <fieldset class="fieldset">
-                            <div>
-                                <label for="adresse">Adresse</label>
-                                <input type="text" maxlength="50" name="adresse" id="adresse3"> 
+    <div id="overlay_3" class="overlay">
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal_head">
+                <h2 id="form_h2">Particulier</h2>
+                <span id="close" class="close3">&times;</span>
+            </div>
+            <!-- MODAL BODY -->
+            <div class="modal_body">
+                <form id="form_3">
+                    <h3>Coordonnées</h3>
+
+                    <p class="form_p">Tous les champs sont obligatoires</p>
+
+                    <!--3 DEBUT PREMIER FIELDSET -->
+                    <fieldset class="fieldset">
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="nom">Nom</label>
+                                <input type="text" maxlength="50" name="nom" class="obligatoire">
                                 <small></small>
                             </div>
-            
-                            <label for="adresse_complement">Complément d'adresse (facultatif)</label>
-                            <input type="text" maxlength="50" name="adresse_complement" id="adresse_complement">
-                            <div class="flex-container1">
-                                <div class="flex-container2">
-                                    <label for="code_postal">Code postal</label>
-                                    <input type="text" maxlength="5" name="code_postal" id="code_postal3">
-                                    <small></small>
-                                </div>
-                                <div class="flex-container2">
-                                    <label for="ville">Ville</label>
-                                    <input type="text" maxlength="50" name="ville" class="obligatoire">
-                                    <small></small>
-                                </div>
+                            <div class="flex-container2">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" maxlength="50" name="prenom" class="obligatoire">
+                                <small></small>
                             </div>
-                         </fieldset>
-                <!--3 FIN DEUXIEME FIELDSET -->
-            
-                         <h3>Votre projet</h3>
-            
-                <!--3 DEBUT TROISIEME FIELDSET -->
-                <fieldset class="fieldset">
-                    <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères max)</span> :</label>
-                    <textarea rows="10" name="projet" id="projet3" ></textarea>
-                    <small></small>
-                    <p id="text_input_file">Joindre un fichier (facultatif)</p> 
-                    <div class="block_download">
-                        <label role= button class="projet_fichier_label" for="">Choisir le fichier <ion-icon name="download-outline"></ion-icon></label>
-
-                        <input type="file" accept=".pdf" name="projet_fichier"class="projet_fichier_input">
-                        <div class="file_selection"></div>
-                    </div>
-                    <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
-                </fieldset>
-                <!--3 FIN TROISIEME FIELDSET -->
-                        
-                <!--3 DEBUT PIED DE PAGE -->
-                        <div id="container_button">
-                            <button><a class="annuler" href="./contact.html">Annuler</a></button>
-                            <input class="button button--Secondary" id="button3" type="submit" value="Envoyer">
                         </div>
-                <!--3 FIN PIED DE PAGE -->
-                    </form>
-                </div>
-                <!-- FIN MODAL BODY -->
-            </div>
-            <!-- FIN MODAL -->
-        </div>
-        <!-- FIN MODAL CONTACT 3 -->
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="numero_telephone">Numéro de téléphone</label>
+                                <input type="tel" maxlength="10" name="numero_telephone" id="numero_telephone3">
+                                <small></small>
+                            </div>
+                            <div class="flex-container2">
+                                <label for="mail">Adresse mail</label>
+                                <input type="email" maxlength="50" name="mail" id="mail3">
+                                <small></small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--3 FIN PREMIER FIELDSET -->
 
-        <!-- MODAL VALIDE  -->
-        <div class="modal_valide">
-            <div class="modal_content">
-                <div class="container_modale">
-                    <ion-icon class="icone_modale" name="checkmark-circle"></ion-icon>
-                    <p>Votre demande a bien été prise en compte</p>
-                    <a href="./contact.html"><button class="button button--Secondary">Retour</button></a>
-                </div>
+                    <h3>Adresse</h3>
+
+                    <!--3 DEBUT DEUXIEME FIELDSET -->
+                    <fieldset class="fieldset">
+                        <div>
+                            <label for="adresse">Adresse</label>
+                            <input type="text" maxlength="50" name="adresse" id="adresse3">
+                            <small></small>
+                        </div>
+
+                        <label for="adresse_complement">Complément d'adresse (facultatif)</label>
+                        <input type="text" maxlength="50" name="adresse_complement" id="adresse_complement">
+                        <div class="flex-container1">
+                            <div class="flex-container2">
+                                <label for="code_postal">Code postal</label>
+                                <input type="text" maxlength="5" name="code_postal" id="code_postal3">
+                                <small></small>
+                            </div>
+                            <div class="flex-container2">
+                                <label for="ville">Ville</label>
+                                <input type="text" maxlength="50" name="ville" class="obligatoire">
+                                <small></small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--3 FIN DEUXIEME FIELDSET -->
+
+                    <h3>Votre projet</h3>
+
+                    <!--3 DEBUT TROISIEME FIELDSET -->
+                    <fieldset class="fieldset">
+                        <label for="projet">Décrivez votre projet en quelques lignes <span id="form_span">(500caractères
+                                max)</span> :</label>
+                        <textarea rows="10" name="projet" id="projet3"></textarea>
+                        <small></small>
+                        <p id="text_input_file">Joindre un fichier (facultatif)</p>
+                        <div class="block_download">
+                            <label role=button class="projet_fichier_label" for="">Choisir le fichier <ion-icon
+                                    name="download-outline"></ion-icon></label>
+
+                            <input type="file" accept=".pdf" name="projet_fichier" class="projet_fichier_input">
+                            <div class="file_selection"></div>
+                        </div>
+                        <p class="form_p">Le fichier doit peser moins de 2Mo. Extension autorisée : .pdf </p>
+                    </fieldset>
+                    <!--3 FIN TROISIEME FIELDSET -->
+
+                    <!--3 DEBUT PIED DE PAGE -->
+                    <div id="container_button">
+                        <button><a class="annuler" href="./contact.html">Annuler</a></button>
+                        <input class="button button--Secondary" id="button3" type="submit" value="Envoyer">
+                    </div>
+                    <!--3 FIN PIED DE PAGE -->
+                </form>
             </div>
+            <!-- FIN MODAL BODY -->
         </div>
         <!-- FIN MODAL -->
+    </div>
+    <!-- FIN MODAL CONTACT 3 -->
+
+    <!-- MODAL VALIDE  -->
+    <div class="modal_valide">
+        <div class="modal_content">
+            <div class="container_modale">
+                <ion-icon class="icone_modale" name="checkmark-circle"></ion-icon>
+                <p>Votre demande a bien été prise en compte</p>
+                <a href="./contact.html"><button class="button button--Secondary">Retour</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL -->
 
     <!------------ FOOTER ---------->
     <footer>
@@ -456,26 +466,30 @@
             <a href="mailto:contact@sunpower.com" class="footer_p">contact@sunpower.com</a>
         </div>
         <!-- FIN BLOC GAUCHE -->
-    
+
         <!-- BLOC CENTRAL -->
         <div class="footer_block footer_block--secondary">
             <p id="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
             <ul class="footer_icon">
-                <li class="icon"><a href="https://www.facebook.com/" target="_blank" aria-label="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
-    
-                <li class="icon"><a href="https://www.linkedin.com/" target="_blank" aria-label="Lien vers Linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-    
-                <li class="icon"><a href="https://www.youtube.com/" target="_blank" aria-label="Lien vers Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
-    
-                <li class="icon"><a href="https://twitter.com/" target="_blank" aria-label="Lien vers Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li class="icon"><a href="https://www.facebook.com/" target="_blank"
+                        aria-label="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+
+                <li class="icon"><a href="https://www.linkedin.com/" target="_blank"
+                        aria-label="Lien vers Linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+                <li class="icon"><a href="https://www.youtube.com/" target="_blank"
+                        aria-label="Lien vers Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+
+                <li class="icon"><a href="https://twitter.com/" target="_blank" aria-label="Lien vers Twitter"><ion-icon
+                            name="logo-twitter"></ion-icon></a></li>
             </ul>
         </div>
         <!-- FIN BLOC CENTRAL -->
-    
+
         <!-- BLOC DROIT -->
         <div class="footer_block">
             <p class="footer_p">ⓒsunpower 2013.</p>
-            <a href="./mention legale.html" id="footer_link" class="footer_p">mentions légales</a>
+            <a href="./mention_legale.html" id="footer_link" class="footer_p">mentions légales</a>
         </div>
         <!-- FIN BLOC DROIT -->
     </footer>
