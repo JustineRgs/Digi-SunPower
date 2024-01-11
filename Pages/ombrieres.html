@@ -24,49 +24,42 @@
 </head>
 
 <body>
-    <!----------HEADER---------->
+    <!--HEADER-->
     <header>
-        <!---------- NAVBAR ---------->
+        <!-- NAVBAR -->
         <nav role="navigation">
-            <div id="navbar">
+            <div class="navbar">
                 <!-- LOGO -->
-                <a href="../index.html" id="navbar_logo" aria-label="Logo SunPower"><img src="../Pictures/LOGO.png"
+                <a href="../index.html" class="navbar_logo" aria-label="Logo SunPower"><img src="../Pictures/LOGO.png"
                         alt="Logo Sunpower"></a>
-                <!-- FIN LOGO -->
 
-                <!-- ICONE MENU BURGER -->
-                <button id="nav_bar_burger" aria-label="Menu">
-                    <ion-icon id="nav_bar_burger_icon" name="menu-outline"></ion-icon>
+                <!-- ICON MENU BURGER -->
+                <button class="nav_bar_burger" aria-label="Menu">
+                    <ion-icon class="nav_bar_burger_icon" name="menu-outline"></ion-icon>
                 </button>
-                <!-- FIN ICONE MENU BURGER -->
 
                 <!-- NAV -->
                 <div class="navbar_dekstop">
-                    <ul id="navbar_liste">
-                        <li class="navbar_item"><a href="../index.html">Accueil</a></li>
+                    <ul class="navbar_liste">
+                        <li class="navbar_item "><a href="../index.html">Accueil</a></li>
                         <li class="navbar_item active"><a href="./ombrieres.html">Nos Ombrières</a></li>
-                        <li class="navbar_item"><a href="./activites.html">Nos Activités</a></li>
-                        <li class="navbar_item"><a href="./contact.html">Nous Contacter</a></li>
+                        <li class="navbar_item "><a href="./activites.html">Nos Activités</a></li>
+                        <li class="navbar_item "><a href="./contact.html">Nous Contacter</a></li>
                         <li><a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon
                                     name="location-sharp"></ion-icon></a></li>
                     </ul>
                 </div>
-                <!-- FIN NAV -->
             </div>
         </nav>
-        <!------------ FIN NAVBAR ------------>
 
-        <!------------ BANNER ---------->
-        <div id="banner">
-            <img src="../Pictures/Banniere_Ombriere.jpg" id="banner_img" alt="Image d'illustration">
-            <h1 id="banner_title">Nos ombrières solaires</h1>
+        <!-- BANNER -->
+        <div class="banner">
+            <img src="../Pictures/Banniere_Principale.jpg" class="banner_img" alt="Image d'illustration">
+            <h1 class="banner_title">Roulez électrique : Chargez solaire</h1>
         </div>
-        <!------------ FIN BANNER ---------->
     </header>
 
-    <!------------ FIN HEADER ---------->
-
-    <!------------ MAIN ---------->
+    <!-- MAIN -->
     <main>
         <!-- SECTION 1 -->
         <section class="article_1 article_1--Secondary">
@@ -74,10 +67,14 @@
                 <h2>Une solution économique et écologique</h2>
                 <p>Nos panneaux solaires sont à la pointe de la technologie et offrent un rendement 25% plus performant
                     que les technologies sur le marché actuel. Grâce à la garantie de 20 ans inclue, vous n'aurez aucun
-                    souci à avoir concernant les pannes, mineures comme majeures. <br> Les ombrières qui vous sont
+                    souci à avoir concernant les pannes, mineures comme majeures.
+                </p>
+                <p>Les ombrières qui vous sont
                     proposées auront été étudié sur mesure par rapport à vos besoins énergétiques et vos exigences
                     architecturales afin de matcher avec l'environnement, et ce tout en respectant les règles de mise en
-                    conformité PLUi.<br>Basées sur une technologie d'accumulateur d'énergie ultra performant, nos
+                    conformité PLUi.
+                </p>
+                <p> Basées sur une technologie d'accumulateur d'énergie ultra performant, nos
                     batteries cumulent 50% d'énergie en plus pour un volume égal à celles proposées sur le marché
                     actuel. Nos travaux sur la recherche et le développement nous permettent d'améliorer constamment nos
                     produits. Ces bornes vous permettent de gérer l'énergie accumulée de manière autonome afin de
@@ -86,7 +83,6 @@
             </article>
             <img class="art_picture" src="../Pictures/Illu_O.jpeg" alt="Image d'ombrière solaire">
         </section>
-        <!-- FIN SECTION 1 -->
 
         <hr>
 
@@ -100,49 +96,40 @@
                 région Occitanie dans le cadre d’un partenariat. </p>
             <a href="./montpellier.html" class="button">Nous retrouver!</a>
         </section>
-        <!-- FIN SECTION 2 -->
     </main>
-    <!------------ FIN MAIN ---------->
 
-    <!------------ FOOTER ---------->
+    <!-- FOOTER -->
     <footer>
-        <!-- BLOC GAUCHE -->
         <div class="footer_block">
-            <span id="footer_subtitle" class="footer_p">Contact</span>
-            <p class="footer_p">2 rue de l’innovation</p>
-            <p class="footer_p">38000 Grenoble</p>
-            <a href="tel:04.67.00.00.00" class="footer_p">04.67.00.00.00</a>
-            <a href="mailto:contact@sunpower.com" class="footer_p">contact@sunpower.com</a>
+            <span class="footer_subtitle">Contact</span>
+            <p>2 rue de l’innovation</p>
+            <p>38000 Grenoble</p>
+            <a href="tel:04.67.00.00.00">04.67.00.00.00</a>
+            <a href="mailto:contact@sunpower.com">contact@sunpower.com</a>
         </div>
-        <!-- FIN BLOC GAUCHE -->
 
-        <!-- BLOC CENTRAL -->
         <div class="footer_block footer_block--secondary">
-            <p id="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
+            <p class="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
             <ul class="footer_icon">
-                <li class="icon"><a href="https://www.facebook.com/" target="_blank"
-                        aria-label="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li class="icon"><a href="https://www.facebook.com/" target="_blank" aria-label="Lien vers Facebook"
+                        title="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
 
-                <li class="icon"><a href="https://www.linkedin.com/" target="_blank"
-                        aria-label="Lien vers Linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li class="icon"><a href="https://www.linkedin.com/" target="_blank" aria-label="Lien vers Linkedin"
+                        title="Lien vers Linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
 
-                <li class="icon"><a href="https://www.youtube.com/" target="_blank"
-                        aria-label="Lien vers Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li class="icon"><a href="https://www.youtube.com/" target="_blank" aria-label="Lien vers Youtube"
+                        title="Lien vers Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
 
-                <li class="icon"><a href="https://twitter.com/" target="_blank" aria-label="Lien vers Twitter"><ion-icon
-                            name="logo-twitter"></ion-icon></a></li>
+                <li class="icon"><a href="https://twitter.com/" target="_blank" aria-label="Lien vers Twitter"
+                        title="Lien vers Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
             </ul>
         </div>
-        <!-- FIN BLOC CENTRAL -->
 
-        <!-- BLOC DROIT -->
         <div class="footer_block">
-            <p class="footer_p">ⓒsunpower 2013.</p>
-            <a href="./mention_legale.html" id="footer_link" class="footer_p">mentions légales</a>
+            <p>ⓒsunpower 2013.</p>
+            <a href="./Pages/mention_legale.html" class="footer_link">mentions légales</a>
         </div>
-        <!-- FIN BLOC DROIT -->
     </footer>
-    <!------------ FIN FOOTER ---------->
 </body>
 
 </html>
