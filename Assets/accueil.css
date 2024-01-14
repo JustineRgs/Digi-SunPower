@@ -16,23 +16,23 @@
 }
 
 /* ------ANIMATION------ */
-.car {
+.block_car {
   position: relative;
   width: 100%;
   height: 100px;
   overflow-x: hidden;
 }
 
-.block_car {
+.car {
   position: absolute;
   width: 80px;
   height: 80px;
-  animation-name: car_block_car;
+  animation-name: animation_car;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-@keyframes car_block_car {
+@keyframes animation_car {
   0% {
     left: -50px;
   }
@@ -73,12 +73,12 @@
   }
 
   /* ------ANIMATION------ */
-  .block_car {
-    animation-name: car_block_car;
+  .car {
+    animation-name: animation_car;
     animation-duration: 6s;
   }
 
-  @keyframes car_block_car {
+  @keyframes animation_car {
     0% {
       left: -70px;
     }
